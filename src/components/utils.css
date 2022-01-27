@@ -1,0 +1,16 @@
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component-container {
+  padding: 1rem;
+  margin: auto;
+  max-width: 80%;
+  border: 1px solid var(--secondary-text);
+  border-radius: 0.4rem;
+}

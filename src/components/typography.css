@@ -54,12 +54,4 @@ p,
 .body-sm {
   font-size: 0.8rem;
 }
-.flex-align-center {
-  display: flex;
-  align-items: center;
-}
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+

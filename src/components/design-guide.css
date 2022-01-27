@@ -27,6 +27,8 @@ body{
     --light-text:#FCFCFC;
     --light-bg:#FCFCFC;
     
+    --alert-primary-text:#084298;
+    --alert-primary-bg: #cfe2ff;
     --sucess-text:#0f5132;
     --sucess-bg: #d1e7dd;
     --danger-text:#842029;
