@@ -1,0 +1,29 @@
+.alert {
+  padding: 1.6rem;
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  margin: 1.6rem;
+  font-size: 1.6rem;
+}
+.alert-icon {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.alert-primary {
+  background: #cfe2ff;
+  color: #084298;
+}
+.alert-success {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+.alert-danger {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+.alert-warning {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
