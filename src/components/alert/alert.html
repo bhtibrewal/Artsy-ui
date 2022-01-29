@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <div>Artsy UI</div>
       <div class="right-side">
@@ -15,65 +16,124 @@
         <div>Docs</div>
       </div>
     </header>
+
+    <!-- aside start -->
     <aside>
       <!-- Getting Started -->
       <h4>Getting Started</h4>
 
       <!-- components -->
       <h4>Components</h4>
-      <a href="../alert/alert.html">Alert</a>
-      <a href="./avatar.html">Avatar</a>
+      <a href="./alert.html">Alert</a>
+      <a href="../avatar/avatar.html">Avatar</a>
       <a href="../badge/badge.html">Badge</a>
       <a href="../button/button.html">Button</a>
     </aside>
+
+    <!-- main -->
     <main>
-      <!-- avatar -->
-      <h1>Avatar</h1>
-      <p class="body-l">
-        The Avatar component is used to represent a user, and displays the
-        profile picture or initials.
-      </p>
-      <h2>Avatar of different sizes</h2>
+      <!-- Alert -->
+      <h1>Alert</h1>
+      <p class="body-l">Alert types</p>
+      <h2>Examples</h2>
       <p>
-        Avatar is available in 4 different sizes. You can use image in Avatar.
-        You need to include class avatar and for size add class according to
-        size
+        We have 3 types of status badges that can be integrated with Avatars.
+        You can show colors to show the online status of user.
       </p>
       <ul class="list">
-        <li>Large: 160px (class: avatar-l)</li>
-        <li>Medium: 100px(class: avatar-m)</li>
-        <li>Small: 48px(class: avatar-s)</li>
+        <li>Online: Green (class: avatar-online)</li>
+        <li>Offline: Red (class: avatar-offline)</li>
+        <li>Not Available: Gray (class: avatar-away)</li>
       </ul>
-      <div class="component-container avatar-container">
-        <div class="avatar avatar-l flex-items">
-          <img
-            src="https://avatars.githubusercontent.com/u/42600164?v=4"
-            alt="avatar"
-          />
-        </div>
-        <div class="avatar avatar-m flex-items">
-          <img
-            src="https://avatars.githubusercontent.com/u/42600164?v=4"
-            alt="avatar"
-          />
-        </div>
-        <div class="avatar avatar-s flex-items">
-          <img
-            src="https://avatars.githubusercontent.com/u/42600164?v=4"
-            alt="avatar"
-          />
-        </div>
-      </div>
-      <!-- Text Avatar -->
-      <h2>Example of Avatar with Text</h2>
       <p>
-        You can use initial letters of user in Avatar as well. You need to
-        include class avatar-text along with avatar and size class.
+        And to show cart or notification count, you can use number badge. Check
+        code below to copy the html part as is.
       </p>
-      <div class="component-container avatar-container">
-        <div class="avatar-text avatar-l">BT</div>
-        <div class="avatar-text avatar-m">BT</div>
-        <div class="avatar-text avatar-s">BT</div>
+      <div class="component-container flex-col">
+        <div class="alert alert-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            aria-hidden="true"
+            role="img"
+            class="alert-icon iconify iconify--ep"
+            width="32"
+            height="32"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="currentColor"
+              d="M512 64a448 448 0 1 1 0 896.064A448 448 0 0 1 512 64zm67.2 275.072c33.28 0 60.288-23.104 60.288-57.344s-27.072-57.344-60.288-57.344c-33.28 0-60.16 23.104-60.16 57.344s26.88 57.344 60.16 57.344zM590.912 699.2c0-6.848 2.368-24.64 1.024-34.752l-52.608 60.544c-10.88 11.456-24.512 19.392-30.912 17.28a12.992 12.992 0 0 1-8.256-14.72l87.68-276.992c7.168-35.136-12.544-67.2-54.336-71.296c-44.096 0-108.992 44.736-148.48 101.504c0 6.784-1.28 23.68.064 33.792l52.544-60.608c10.88-11.328 23.552-19.328 29.952-17.152a12.8 12.8 0 0 1 7.808 16.128L388.48 728.576c-10.048 32.256 8.96 63.872 55.04 71.04c67.84 0 107.904-43.648 147.456-100.416z"
+            ></path>
+          </svg>
+          A primary alert example!!!!
+        </div>
+        <div class="alert alert-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            aria-hidden="true"
+            role="img"
+            class="alert-icon iconify iconify--icon-park-outline"
+            width="32"
+            height="32"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 48 48"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M24 4l5.253 3.832l6.503-.012l1.997 6.188l5.268 3.812L41 24l2.021 6.18l-5.268 3.812l-1.997 6.188l-6.503-.012L24 44l-5.253-3.832l-6.503.012l-1.997-6.188l-5.268-3.812L7 24l-2.021-6.18l5.268-3.812l1.997-6.188l6.503.012L24 4z"
+              ></path>
+              <path d="M17 24l5 5l10-10"></path>
+            </g>
+          </svg>
+          A success alert example!!!!
+        </div>
+        <div class="alert alert-danger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            aria-hidden="true"
+            role="img"
+            class="alert-icon iconify iconify--ic"
+            width="32"
+            height="32"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM19 14.9L14.9 19H9.1L5 14.9V9.1L9.1 5h5.8L19 9.1v5.8zm-4.17-7.14L12 10.59L9.17 7.76L7.76 9.17L10.59 12l-2.83 2.83l1.41 1.41L12 13.41l2.83 2.83l1.41-1.41L13.41 12l2.83-2.83l-1.41-1.41z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          A danger alert example!!!!
+        </div>
+        <div class="alert alert-warning">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            aria-hidden="true"
+            role="img"
+            class="alert-icon iconify iconify--jam"
+            width="32"
+            height="32"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14.8 4.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H5.298C3.477 21 2 19.47 2 17.581c0-.639.173-1.264.498-1.807L9.2 4.613c.962-1.603 2.996-2.094 4.543-1.096c.428.276.79.651 1.057 1.096zm-2.22.839a1.077 1.077 0 0 0-1.514.365L4.365 16.98a1.17 1.17 0 0 0-.166.602c0 .63.492 1.14 1.1 1.14H18.7c.206 0 .407-.06.581-.172a1.164 1.164 0 0 0 .353-1.57L12.933 5.817a1.12 1.12 0 0 0-.352-.365zM12 17a1 1 0 1 1 0-2a1 1 0 0 1 0 2zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          A warning alert example!!!
+        </div>
       </div>
     </main>
 

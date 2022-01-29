@@ -3,11 +3,11 @@
   height:fit-content;
 }
 .avatar {
-  margin: 1rem;
+  margin: .8rem;
   position: relative;
 }
 .avatar-text {
-  margin: 0 1rem;
+  margin: 0 .8rem;
   border-radius: 50%;
   background: var(--primary-color);
   display: flex;
@@ -23,15 +23,15 @@
 .avatar-l {
   width: 16rem;
   height: 16rem;
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 .avatar-m {
   width: 10rem;
   height: 10rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .avatar-s {
   width: 4.8rem;
   height: 4.8rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }

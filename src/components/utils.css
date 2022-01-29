@@ -2,39 +2,70 @@
   display: flex;
   align-items: center;
 }
+.flex-col {
+  display: center;
+  flex-direction: column;
+}
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .component-container {
-  padding: 1rem;
-  margin: 1rem auto;
+  padding: 1.6rem;
+  margin: 3rem;
   max-width: 80%;
   border: 1px solid var(--secondary-text);
   border-radius: 0.4rem;
   display: flex;
-  flex-wrap:wrap;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 header {
-  /* display:flex; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   grid-area: header;
-  background: var( --primary-color);
-  color:white;
-  padding: 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 1.6rem;
+  box-shadow: 0 0 10px -4px var(--secondary-text);
 }
+.right-side {
+  display: flex;
+  gap: 1rem;
+}
+footer {
+  min-width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--light-text);
+}
+.social-logos svg,
+.heart-logo {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-content:center;
+  margin: 0.5rem;
+}
+
 aside {
   grid-area: aside;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
 }
-aside a{
-  padding: 1rem;
-  color:var(--secondary-color);
-  font-weight:500;
+aside h4 {
+  font-weight: 600;
+}
+aside a {
+  padding: 0.8rem;
+  color: inherit;
+}
+aside > a:hover {
+  color: var(--primary-color);
 }
 main {
   grid-area: main;
@@ -44,27 +75,25 @@ body {
   height: 100vh;
   max-width: 100%;
 
-  display:grid;
-  grid-template-columns: 30rem 1fr 1fr ;
+  display: grid;
+  grid-template-columns: 30rem 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
-  "header header header"
-  "aside main main"
-  "aside main main";
-  gap:1rem;
+    "header header header"
+    "aside main main"
+    "aside main main";
+  gap: 1rem;
 }
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
-ul{
+ul {
   list-style: none;
-  padding:0 1rem;
+  padding: 0 1rem;
 }
-.list{
-  display:flex;
+.list {
+  display: flex;
   flex-direction: column;
-  margin:auto;
-  gap:1rem;
+  margin: auto;
+  gap: 1rem;
 }
-
-

@@ -2,5 +2,7 @@
 @import './components/design-guide.css';
 @import './components/typography.css';
 @import './components/utils.css';
+@import './components/alert/alert.css';
 @import './components/avatar/avatar.css';
 @import './components/badge/badge.css';
+@import './components/button/button.css';
