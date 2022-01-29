@@ -1,5 +1,12 @@
+@import url("./src/artsyUI.css");
 body{
     background: #dedede;
     font-family:  sans-serif;
     font-size: 1.6rem;
+    
+}
+.main-page-buttons button {
+    padding: 1rem;
+    border:none;
+    background:var(--primary-color);
 }

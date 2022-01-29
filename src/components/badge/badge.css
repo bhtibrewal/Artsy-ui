@@ -1,0 +1,23 @@
+.avatar-online::after,
+.avatar-offline::after,
+.avatar-away::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 4px solid var(--light-bg);
+}
+.avatar-online::after {
+  background: var(--online-color);
+}
+.avatar-offline::after {
+  background: var(--offline-color);
+}
+.avatar-away::after {
+  background: var(--secondary-text);
+}
+
