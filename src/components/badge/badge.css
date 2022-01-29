@@ -1,6 +1,5 @@
-
 .avatar-online::after,
-.avatar-ofline::after,
+.avatar-offline::after,
 .avatar-away::after {
   content: "";
   position: absolute;
@@ -15,12 +14,10 @@
 .avatar-online::after {
   background: var(--online-color);
 }
-.avatar-ofline::after {
-  background: var(--ofline-color);
+.avatar-offline::after {
+  background: var(--offline-color);
 }
 .avatar-away::after {
   background: var(--secondary-text);
 }
-svg  {
-  color: yellow;
-}
+
