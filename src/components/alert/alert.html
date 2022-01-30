@@ -10,45 +10,84 @@
   <body>
     <!-- header -->
     <header>
-      <div>Artsy UI</div>
+      <div>
+        <img class="artsy-logo" src="../../assets/logo-v2.png" />
+      </div>
       <div class="right-side">
-        <div>Home</div>
-        <div>Docs</div>
+        <a class="link-text-primary">Home</a>
+        <a class="link-text-primary">Docs</a>
+        <div class="mode-toggle">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            aria-hidden="true"
+            focusable="false"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
+            ></path>
+          </svg>
+        </div>
       </div>
     </header>
 
     <!-- aside start -->
     <aside>
       <!-- Getting Started -->
-      <h4>Getting Started</h4>
+      <h3>Getting Started</h3>
+      <a href="">Introduction</a>
+      <a href="">Typography</a>
 
       <!-- components -->
-      <h4>Components</h4>
-      <a href="./alert.html">Alert</a>
+      <h3>Components</h3>
+      <a class="active-tab" href="./alert.html">Alert</a>
       <a href="../avatar/avatar.html">Avatar</a>
       <a href="../badge/badge.html">Badge</a>
       <a href="../button/button.html">Button</a>
+      <a href="">Card</a>
+      <a href="">Input</a>
+      <a href="">Form</a>
+      <a href="">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main>
       <!-- Alert -->
       <h1>Alert</h1>
-      <p class="body-l">Alert types</p>
-      <h2>Examples</h2>
+      <p class="body-l">
+        Alerts are used to attract user's attention for important information
+        without interrupting the user's flow.
+      </p>
+      <h3>Examples</h3>
       <p>
-        We have 3 types of status badges that can be integrated with Avatars.
-        You can show colors to show the online status of user.
+        We have 4 types of alerts. Different colors of alert signify different.
       </p>
       <ul class="list">
-        <li>Online: Green (class: avatar-online)</li>
-        <li>Offline: Red (class: avatar-offline)</li>
-        <li>Not Available: Gray (class: avatar-away)</li>
+        <li>
+          Primary: Blue (<span class="highlight-text">
+            class: alert-primary</span
+          >)
+        </li>
+        <li>
+          Success: Green (<span class="highlight-text"
+            >class: alert-success</span
+          >)
+        </li>
+        <li>
+          Danger: Red (<span class="highlight-text">class: alert-danger</span>)
+        </li>
+        <li>
+          Warning: Yellow (<span class="highlight-text"
+            >class: alert-warning</span
+          >)
+        </li>
       </ul>
-      <p>
-        And to show cart or notification count, you can use number badge. Check
-        code below to copy the html part as is.
-      </p>
+      <p>Check code below to copy the html part as is.</p>
       <div class="component-container flex-col">
         <div class="alert alert-primary">
           <svg
@@ -214,5 +253,6 @@
         by Bhavika Tibrewal
       </div>
     </footer>
+    <script src="../../../index.js"></script>
   </body>
 </html>

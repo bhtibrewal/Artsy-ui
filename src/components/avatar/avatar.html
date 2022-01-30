@@ -9,22 +9,48 @@
   </head>
   <body>
     <header>
-      <div>Artsy UI</div>
+      <div>
+        <img class="artsy-logo" src="../../assets/logo-v2.png" />
+      </div>
       <div class="right-side">
-        <div>Home</div>
-        <div>Docs</div>
+        <a class="link-text-primary">Home</a>
+        <a class="link-text-primary">Docs</a>
+        <div class="mode-toggle">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            aria-hidden="true"
+            focusable="false"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
+            ></path>
+          </svg>
+        </div>
       </div>
     </header>
+
     <aside>
       <!-- Getting Started -->
-      <h4>Getting Started</h4>
+      <h3>Getting Started</h3>
+      <a href="">Introduction</a>
+      <a href="">Typography</a>
 
       <!-- components -->
-      <h4>Components</h4>
+      <h3>Components</h3>
       <a href="../alert/alert.html">Alert</a>
-      <a href="./avatar.html">Avatar</a>
+      <a class="active-tab" href="./avatar.html">Avatar</a>
       <a href="../badge/badge.html">Badge</a>
       <a href="../button/button.html">Button</a>
+      <a href="">Card</a>
+      <a href="">Input</a>
+      <a href="">Form</a>
+      <a href="">Snackbar</a>
     </aside>
     <main>
       <!-- avatar -->
@@ -33,16 +59,22 @@
         The Avatar component is used to represent a user, and displays the
         profile picture or initials.
       </p>
-      <h2>Avatar of different sizes</h2>
+      <h3>Avatar of different sizes</h3>
       <p>
         Avatar is available in 4 different sizes. You can use image in Avatar.
-        You need to include class avatar and for size add class according to
-        size
+        You need to include class <span class="highlight-text">avatar</span>
+        and for size add class according to size
       </p>
       <ul class="list">
-        <li>Large: 160px (class: avatar-l)</li>
-        <li>Medium: 100px(class: avatar-m)</li>
-        <li>Small: 48px(class: avatar-s)</li>
+        <li>
+          Large: 160px (<span class="highlight-text">class: avatar-l</span>)
+        </li>
+        <li>
+          Medium: 100px(<span class="highlight-text">class: avatar-m</span>)
+        </li>
+        <li>
+          Small: 48px(<span class="highlight-text">class: avatar-s</span>)
+        </li>
       </ul>
       <div class="component-container avatar-container">
         <div class="avatar avatar-l flex-items">
@@ -65,10 +97,11 @@
         </div>
       </div>
       <!-- Text Avatar -->
-      <h2>Example of Avatar with Text</h2>
+      <h3>Example of Avatar with Text</h3>
       <p>
         You can use initial letters of user in Avatar as well. You need to
-        include class avatar-text along with avatar and size class.
+        include class <span class="highlight-text">avatar-text </span>
+        along with avatar and size class.
       </p>
       <div class="component-container avatar-container">
         <div class="avatar-text avatar-l">BT</div>
@@ -128,7 +161,7 @@
           viewBox="0 0 24 24"
         >
           <path
-            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21h32v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
             fill="currentColor"
           ></path>
         </svg>
@@ -154,5 +187,6 @@
         by Bhavika Tibrewal
       </div>
     </footer>
+    <script src="../../../index.js"></script>
   </body>
 </html>

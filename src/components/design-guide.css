@@ -13,6 +13,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media screen and ( max-width:600px){
+  html{
+    font-size: 50%;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -28,7 +33,7 @@ body {
   --secondary-color: rgb(128, 5, 93); /*#80055d*/
 
   --primary-text: rgb(46, 46, 46);
-  --secondary-text: rgb(53, 53, 53); /*#535353*/
+  --secondary-text: rgb(73, 73, 73); /*#737373*/
   --light-text: rgb(241, 241, 241);
   --light-bg: rgb(252, 252, 252);
   --gray-bg: #d4d4d4;
