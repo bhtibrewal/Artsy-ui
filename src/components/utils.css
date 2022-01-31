@@ -72,7 +72,6 @@ aside {
 aside a {
   font-size:1.8rem;
   padding: 0.8rem;
-  color: inherit;
 }
 aside > a:hover {
   color: var(--primary-color);
@@ -121,4 +120,9 @@ ul {
 }
 .highlight-text{
   color:var(--primary-color);
+}
+.to-top-btn{
+  position:absolute;
+  bottom:5rem;
+  right:5rem;
 }

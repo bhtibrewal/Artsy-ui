@@ -12,8 +12,8 @@
   margin-right: .8rem;
 }
 .alert-primary {
-  background: #cfe2ff;
-  color: #084298;
+  background: var(--alert-primary-bg);
+  color: var(--alert-primary-text);
 }
 .alert-success {
   background: var(--success-bg);
