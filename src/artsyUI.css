@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap');
-@import './components/design-guide.css';
-@import './components/typography.css';
-@import './components/utils.css';
-@import './components/avatar/avatar.css';
-@import './components/badge/badge.css';
+/* font families  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Nunito:wght@300&display=swap");
+
+/* css files  */
+@import "./components/design-guide.css";
+@import "./components/typography.css";
+@import "./components/utils.css";
+@import "./components/alert/alert.css";
+@import "./components/avatar/avatar.css";
+@import "./components/badge/badge.css";
+@import "./components/button/button.css";
