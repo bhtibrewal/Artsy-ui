@@ -44,10 +44,10 @@
       <!-- components -->
       <h3>Components</h3>
       <a href="../alert/alert.html">Alert</a>
-      <a class="active-tab" href="./avatar.html">Avatar</a>
+      <a class="active-tab" href="">Avatar</a>
       <a href="../badge/badge.html">Badge</a>
       <a href="../button/button.html">Button</a>
-      <a href="">Card</a>
+      <a href="../card/card.html">Card</a>
       <a href="">Input</a>
       <a href="">Form</a>
       <a href="">Snackbar</a>
@@ -59,6 +59,7 @@
         The Avatar component is used to represent a user, and displays the
         profile picture or initials.
       </p>
+      <div class="component-desc">
       <h3>Avatar of different sizes</h3>
       <p>
         Avatar is available in 4 different sizes. You can use image in Avatar.
@@ -76,6 +77,8 @@
           Small: 48px(<span class="highlight-text">class: avatar-s</span>)
         </li>
       </ul>
+      </div>
+
       <div class="component-container avatar-container">
         <div class="avatar avatar-l flex-items">
           <img
@@ -96,13 +99,17 @@
           />
         </div>
       </div>
+
       <!-- Text Avatar -->
+      <div class="component-desc">
       <h3>Example of Avatar with Text</h3>
       <p>
         You can use initial letters of user in Avatar as well. You need to
         include class <span class="highlight-text">avatar-text </span>
         along with avatar and size class.
       </p>
+      </div>
+      
       <div class="component-container avatar-container">
         <div class="avatar-text avatar-l">BT</div>
         <div class="avatar-text avatar-m">BT</div>
@@ -187,6 +194,24 @@
         by Bhavika Tibrewal
       </div>
     </footer>
+    <button class="to-top-btn floating-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        aria-hidden="true"
+        role="img"
+        class="iconify iconify--mdi"
+        width="32"
+        height="32"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </button>
     <script src="../../../index.js"></script>
   </body>
 </html>

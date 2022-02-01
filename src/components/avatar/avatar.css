@@ -16,8 +16,6 @@
   font-weight: 500;
 }
 .avatar img {
-  object-fit: contain;
-  width: 100%;
   border-radius: 50%;
 }
 .avatar-l {
