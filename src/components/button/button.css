@@ -3,7 +3,7 @@
 }
 .btn {
   border-radius: 4px;
-  padding: 0.8rem 1.6rem;
+  padding: 0.5rem 1rem;
   text-transform: capitalize;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -71,6 +71,11 @@
   display: grid;
   place-content: center;
   box-shadow: 2px 2px 10px -3px var(--secondary-text);
+}
+.icon {
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
 }
 
 /* toggle button */

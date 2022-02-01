@@ -2,20 +2,20 @@
   background: var(--light-bg);
   border-radius: 1rem;
   border: thin solid var(--gray-bg);
+  box-shadow:0 0 10px -4px var(--secondary-text);
   margin: auto;
-  
   overflow: hidden;
   position: relative;
   transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.w-30{
-    max-width: 30rem;
+.w-30 {
+  max-width: 30rem;
 }
-.w-40{
-    max-width: 40rem;
+.w-40 {
+  max-width: 40rem;
 }
-.w-50{
-    max-width: 50rem;
+.w-50 {
+  max-width: 50rem;
 }
 
 .content {
@@ -100,26 +100,33 @@
 }
 
 /* add to favourite btn */
-.favourite-icon svg {
-  border-radius: 50%;
+
+.favourite-icon {
   color: var(--light-text);
-  display: grid;
-  place-content: center;
   position: absolute;
   top: 5%;
   left: 5%;
 }
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--light-text);
+}
+.close-btn:hover {
+  background: var(--overlay-color);
+}
 
-.favourite-icon svg:hover {
+.favourite-icon:hover {
   color: red;
 }
 /* card badge */
 .card-badge {
   position: absolute;
   top: 5%;
-  background:var(--primary-color-lighter);
-  color:var(--light-text);
-  padding: 0.3rem .5rem;
+  background: var(--primary-color-lighter);
+  color: var(--light-text);
+  padding: 0.3rem 0.5rem;
 }
 
 /* Basic w/ Text over Media */
@@ -134,8 +141,13 @@
   grid-column: 1/2;
 }
 
-.text-o-media .card-header>* {
+.text-o-media .card-header > * {
   color: var(--light-bg);
+}
+.text-o-media .card-header {
+  background: var(--overlay-color);
+  padding: 1.6rem;
+  margin: 0;
 }
 
 :is(.text-o-media, .basic-wh) .card-body {
@@ -165,7 +177,6 @@
 }
 
 /* Horizontal Image and Text */
-
 .hori .content {
   display: flex;
   flex-direction: row;
