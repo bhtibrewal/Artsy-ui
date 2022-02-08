@@ -49,4 +49,6 @@ body {
 
   --online-color: #1b7052;
   --offline-color: #dc3545;
+
+  --overlay-color:rgba(88, 88, 88, 0.7);
 }

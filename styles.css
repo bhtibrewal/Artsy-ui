@@ -3,10 +3,14 @@ body{
     background: #dedede;
     font-family:  sans-serif;
     font-size: 1.6rem;
-    
 }
-.main-page-buttons button {
-    padding: 1rem;
-    border:none;
-    background:var(--primary-color);
+.main-btn{
+    border-radius:3rem;
+    background:var(--secondary-color);
+    color:var(--light-text);
+    height:4.8rem;
+    width:19rem;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
 }

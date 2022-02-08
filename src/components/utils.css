@@ -15,13 +15,16 @@
 }
 .component-container {
   padding: 1.6rem;
-  margin: 3rem;
-  max-width: 80%;
+  margin: 3rem 0;
+  /* max-width: 80%; */
   border: 1px solid var(--secondary-text);
   border-radius: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+}
+.component-desc{
+  margin-top:3.2rem;
 }
 header {
   display: flex;
@@ -112,6 +115,15 @@ ul {
   list-style: none;
   padding: 0 1rem;
 }
+button{
+  cursor:pointer;
+  border:none;
+  background:transparent;
+}
+img{
+  object-fit: cover;
+  width: 100%;
+}
 .list {
   display: flex;
   flex-direction: column;
@@ -119,10 +131,22 @@ ul {
   gap: 1rem;
 }
 .highlight-text{
-  color:var(--primary-color);
+  background:var(--primary-color);
+  padding:0 1rem ;
+  color:var(--light-text);
+  border-radius: 1rem;;
 }
 .to-top-btn{
   position:absolute;
   bottom:5rem;
   right:5rem;
+}
+.i-frame-container{
+  text-align: center;
+  background-color: hotpink;
+  /* padding: 2rem 0; */
+  margin: auto;
+  overflow: auto;
+  max-width:100vw;
+  max-height: 10rem;
 }

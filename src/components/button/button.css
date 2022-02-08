@@ -2,10 +2,8 @@
   align-items:center;
 }
 .btn {
-  border: none;
   border-radius: 4px;
-  padding: 0.8rem 1.6rem;
-  cursor: pointer;
+  padding: 0.5rem 1rem;
   text-transform: capitalize;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -16,7 +14,7 @@
   align-items: center;
   gap: 1rem;
 }
-.btn svg {
+.btn .button-icon, .btn svg {
   width: 1.6rem;
   display: grid;
   place-items: center;
@@ -37,12 +35,19 @@
 }
 /* outline button */
 .outline-btn-primary {
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
+.outline-btn-primary:hover{
+  background:var(--primary-color);
+  color: var(--light-text);
+}
 .outline-btn-secondary {
-  border: 2px solid var(--secondary-text);
+  border: 1px solid var(--gray-bg);
   color: var(--secondary-text);
+}
+.outline-btn-secondary:hover{
+  background:var(--gray-bg);
 }
 
 /* text style buttons */
@@ -59,16 +64,21 @@
 /* floating buttons */
 .floating-btn {
   border-radius: 50%;
-  border: none;
   background: var(--primary-color);
   color: var(--light-text);
   width: 5rem;
   height: 5rem;
   display: grid;
   place-content: center;
-  cursor: pointer;
   box-shadow: 2px 2px 10px -3px var(--secondary-text);
 }
+.icon {
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+/* toggle button */
 .switch {
   position: relative;
   display: inline-block;

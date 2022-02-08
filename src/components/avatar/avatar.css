@@ -10,15 +10,15 @@
   margin: 0 .8rem;
   border-radius: 50%;
   background: var(--primary-color);
+  color:var(--light-text);
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 500;
 }
 .avatar img {
-  object-fit: contain;
-  width: 100%;
   border-radius: 50%;
+  border:1px solid var(--gray-bg);
 }
 .avatar-l {
   width: 16rem;
