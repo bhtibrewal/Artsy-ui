@@ -1,0 +1,19 @@
+.artsy-img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-responsive img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.img-round {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.img-round img {
+  width: 100%;
+}
