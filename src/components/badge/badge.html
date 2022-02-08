@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
   </head>
@@ -50,7 +54,8 @@
       <a class="active-tab" href="">Badge</a>
       <a href="../button/button.html">Button</a>
       <a href="../card/card.html">Card</a>
-      <a href="">Input</a>
+      <a href="../image/image.html">Image</a>
+      <a href="../input/input.html">Input</a>
       <a href="">Form</a>
       <a href="">Snackbar</a>
     </aside>
@@ -64,32 +69,34 @@
         information
       </p>
       <div class="component-desc">
-      <h3>Avatar with Status Badge</h3>
-      <p>
-        We have 3 types of status badges that can be integrated with Avatars.
-        You can show colors to show the online status of user.
-      </p>
-      
-      <ul class="list">
-        <li>
-          Online: Green (<span class="highlight-text">class: avatar-online</span
-          >)
-        </li>
-        <li>
-          Offline: Red (<span class="highlight-text">class: avatar-offline</span
-          >)
-        </li>
-        <li>
-          Not Available: Gray (<span class="highlight-text"
-            >class: avatar-away</span
-          >
-          )
-        </li>
-      </ul>
-      <p>
-        And to show cart or notification count, you can use number badge. Check
-        code below to copy the html part as is.
-      </p>
+        <h3>Avatar with Status Badge</h3>
+        <p>
+          We have 3 types of status badges that can be integrated with Avatars.
+          You can show colors to show the online status of user.
+        </p>
+
+        <ul class="list">
+          <li>
+            Online: Green (<span class="highlight-text"
+              >class: avatar-online</span
+            >)
+          </li>
+          <li>
+            Offline: Red (<span class="highlight-text"
+              >class: avatar-offline</span
+            >)
+          </li>
+          <li>
+            Not Available: Gray (<span class="highlight-text"
+              >class: avatar-away</span
+            >
+            )
+          </li>
+        </ul>
+        <p>
+          And to show cart or notification count, you can use number badge.
+          Check code below to copy the html part as is.
+        </p>
       </div>
       <div class="component-container avatar-container">
         <div class="avatar avatar-online avatar-m">
@@ -110,6 +117,17 @@
             src="https://avatars.githubusercontent.com/u/42600164?v=4"
             alt="avatar"
           />
+        </div>
+      </div>
+
+      <!-- badge on icon -->
+      <div class="component-desc">
+        <h3>Badge on icon</h3>
+      </div>
+      <div class="component-container avatar-container">
+        <div class="icon-badge">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge">25</span>
         </div>
       </div>
     </main>

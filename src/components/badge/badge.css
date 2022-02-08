@@ -8,8 +8,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  box-sizing: border-box;
-  border: .4rem solid var(--light-bg);
+  border: 0.4rem solid var(--light-bg);
 }
 .avatar-online::after {
   background: var(--online-color);
@@ -20,4 +19,19 @@
 .avatar-away::after {
   background: var(--secondary-text);
 }
-
+.icon-badge {
+  position: relative;
+}
+.badge {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top:-1rem;
+  right:-1rem;
+  font-size: 1rem;
+  background: var(--primary-color);
+  color: var(--light-text);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}

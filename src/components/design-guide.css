@@ -51,4 +51,7 @@ body {
   --offline-color: #dc3545;
 
   --overlay-color:rgba(88, 88, 88, 0.7);
+
+  --input-err: red;
+  --input-success: green;
 }

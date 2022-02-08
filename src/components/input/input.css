@@ -1,0 +1,62 @@
+.artsy-input {
+  position: relative;
+}
+.artsy-input input,
+.artsy-input textarea {
+  width: 100%;
+  border: 1px solid var(--secondary-text);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  outline: none;
+}
+.artsy-input .input-std {
+  border: none;
+  border-bottom: 2px solid var(--secondary-text);
+  border-radius: 0;
+}
+.artsy-input input:focus {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.input-label {
+  position: absolute;
+  top: -1.2rem;
+  left: 1rem;
+  padding: 0 0.5rem;
+  background-color: var(--light-bg);
+}
+.input-req .input-label::before {
+  content: "*";
+  color: var(--offline-color);
+}
+.input-err input {
+  border-color: var(--input-err);
+}
+.input-err::after {
+  content: "username not available";
+  color: var(--input-err);
+}
+.input-err input:focus {
+  border-color: var(--input-err);
+}
+
+.input-success input {
+  border-color: var(--input-success);
+}
+.input-success::after {
+  content: "username available";
+  color: var(--input-success);
+}
+.input-success input:focus {
+  border-color: var(--input-success);
+}
+.icon-input i{
+  position: absolute;
+  font-size:1.5rem;
+  top: 1.5rem;
+  left:1rem;
+}
+.icon-input input{
+    padding-left: 3rem;
+}
