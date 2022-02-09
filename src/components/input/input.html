@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
 </head>
 
-<body>
+<body class="cl-body">
     <!-- header -->
-    <header>
-        <div>
+    <header class="cl-header">
+        <a href="../../../index.html">
             <img alt="artsyui-logo" class="artsy-logo" src="../../assets/logo-v2.png" />
-        </div>
+        </a>
         <div class="right-side">
             <a class="link-text-primary">Home</a>
             <a class="link-text-primary">Docs</a>
@@ -31,7 +32,7 @@
     </header>
 
     <!-- aside start -->
-    <aside>
+    <aside class="cl-aside">
         <!-- Getting Started -->
         <h3>Getting Started</h3>
         <a href="">Introduction</a>
@@ -51,7 +52,7 @@
     </aside>
 
     <!-- main -->
-    <main>
+    <main class="cl-main">
         <h1>Input</h1>
         <p class="body-l"></p>
 
@@ -101,10 +102,12 @@
 
                 <span class="input-label">username</span>
                 <input class="input-outlined" type="text"/>
+                <span class="input-desc">username not available</span>
             </div>
             <div class="artsy-input input-req input-success" >
                 <span class="input-label">username</span>
                 <input class="input-outlined" type="text"/>
+                <span class="input-desc">username available</span>
             </div>
             
         </div>
@@ -125,7 +128,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="flex-align-center">
+    <footer class="cl-footer flex-align-center">
         <div class="social-logos flex-align-center">
             <!-- github icon -->
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"

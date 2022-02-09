@@ -5,16 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../../styles.css" />
   <link rel="stylesheet" href="../../artsyUI.css" />
   <title>Artsy UI</title>
 </head>
 
-<body>
+<body class="cl-body">
   <!-- header -->
-  <header>
-    <div>
+  <header class="cl-header">
+    <a href="../../../index.html">
       <img class="artsy-logo" src="../../assets/logo-v2.png" />
-    </div>
+    </a>
     <div class="right-side">
       <a class="link-text-primary">Home</a>
       <a class="link-text-primary">Docs</a>
@@ -30,7 +33,7 @@
   </header>
 
   <!-- aside start -->
-  <aside>
+  <aside class="cl-aside">
     <!-- Getting Started -->
     <h3>Getting Started</h3>
     <a href="">Introduction</a>
@@ -50,7 +53,7 @@
   </aside>
 
   <!-- main -->
-  <main>
+  <main class="cl-main">
     <h1>Buttons</h1>
     <p class="body-l">
       Buttons are also called as call to action. We have range of buttons and
@@ -85,13 +88,7 @@
       <a href="" class="link-text-primary">primary text</a>
     </div>
 
-    <div class="iframe-container">
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%2874%2C74%2C74%2C1%29&t=base16-light&wt=none&l=javascript&width=654.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Primary%2520style%2520button%2520%2520--%253E%250A%250A%2520%253C%21--%2520CTA%2520color%2520--%253E%2520%2520%2520%2520%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Eprimary%2520button%253C%252Fbutton%253E%250A%250A%253C%21--%2520secondary%2520color%2520--%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253Esecondary%2520button%253C%252Fbutton%253E%250A%250A%253C%21--%2520link%2520text%2520button%2520--%253E%250A%253Ca%2520href%253D%2522%2522%2520class%253D%2522link-text-primary%2522%253Eprimary%2520text%253C%252Fa%253E%250A%2520%2520"
-        style="width: 655px; height: 375px; border:0; transform: scale(1); overflow:hidden;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
-    </div>
+    
 
     <!-- outline buttons -->
     <div class="component-desc">
@@ -105,6 +102,12 @@
       <button class="btn outline-btn-secondary">button</button>
     </div>
 
+    <div class="code_wrapper">
+      <script type="text/plain" class="line-numbers language-markup">
+        <button class="btn outline-btn-primary">button</button>
+      <button class="btn outline-btn-secondary">button</button>
+      </script>
+    </div>
 
     <!-- buttons with icons -->
     <div class="component-desc"></div>
@@ -166,7 +169,7 @@
 
 
   <!-- footer -->
-  <footer class="flex-align-center">
+  <footer class="cl-footer flex-align-center">
     <div class="social-logos flex-align-center">
       <!-- github icon -->
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -209,6 +212,7 @@
       <path d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12z" fill="currentColor"></path>
     </svg>
   </button>
+  <script src="/src/doc/prism.js"></script>
   <script src="../../../index.js"></script>
 </body>
 
