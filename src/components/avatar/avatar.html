@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
   </head>
-  <body>
-    <header>
-      <div>
+
+  <body class="cl-body">
+    <!--******** header *******-->
+    <header class="cl-header">
+      <a href="../../../index.html">
         <img class="artsy-logo" src="../../assets/logo-v2.png" />
-      </div>
+      </a>
+
+      <!--  -->
       <div class="right-side">
         <a class="link-text-primary">Home</a>
         <a class="link-text-primary">Docs</a>
@@ -35,7 +44,8 @@
       </div>
     </header>
 
-    <aside>
+    <!--******** aside *******-->
+    <aside class="cl-aside">
       <!-- Getting Started -->
       <h3>Getting Started</h3>
       <a href="">Introduction</a>
@@ -53,7 +63,9 @@
       <a href="">Form</a>
       <a href="">Snackbar</a>
     </aside>
-    <main>
+
+    <!--******** main *******-->
+    <main class="cl-main">
       <!-- avatar -->
       <h1>Avatar</h1>
       <p class="body-l">
@@ -61,23 +73,23 @@
         profile picture or initials.
       </p>
       <div class="component-desc">
-      <h3>Avatar of different sizes</h3>
-      <p>
-        Avatar is available in 4 different sizes. You can use image in Avatar.
-        You need to include class <span class="highlight-text">avatar</span>
-        and for size add class according to size
-      </p>
-      <ul class="list">
-        <li>
-          Large: 160px (<span class="highlight-text">class: avatar-l</span>)
-        </li>
-        <li>
-          Medium: 100px(<span class="highlight-text">class: avatar-m</span>)
-        </li>
-        <li>
-          Small: 48px(<span class="highlight-text">class: avatar-s</span>)
-        </li>
-      </ul>
+        <h3>Avatar of different sizes</h3>
+        <p>
+          Avatar is available in 4 different sizes. You can use image in Avatar.
+          You need to include class <span class="highlight-text">avatar</span>
+          and for size add class according to size
+        </p>
+        <ul class="list">
+          <li>
+            Large: 160px (<span class="highlight-text">class: avatar-l</span>)
+          </li>
+          <li>
+            Medium: 100px(<span class="highlight-text">class: avatar-m</span>)
+          </li>
+          <li>
+            Small: 48px(<span class="highlight-text">class: avatar-s</span>)
+          </li>
+        </ul>
       </div>
 
       <div class="component-container avatar-container">
@@ -103,14 +115,14 @@
 
       <!-- Text Avatar -->
       <div class="component-desc">
-      <h3>Example of Avatar with Text</h3>
-      <p>
-        You can use initial letters of user in Avatar as well. You need to
-        include class <span class="highlight-text">avatar-text </span>
-        along with avatar and size class.
-      </p>
+        <h3>Example of Avatar with Text</h3>
+        <p>
+          You can use initial letters of user in Avatar as well. You need to
+          include class <span class="highlight-text">avatar-text </span>
+          along with avatar and size class.
+        </p>
       </div>
-      
+
       <div class="component-container avatar-container">
         <div class="avatar-text avatar-l">BT</div>
         <div class="avatar-text avatar-m">BT</div>
@@ -118,8 +130,8 @@
       </div>
     </main>
 
-    <!-- footer -->
-    <footer class="flex-align-center">
+    <!--******** footer *******-->
+    <footer class="cl-footer flex-align-center">
       <div class="social-logos flex-align-center">
         <!-- github icon -->
         <svg

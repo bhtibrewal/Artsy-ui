@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/artsyUI.css" />
     <link rel="stylesheet" href="/styles.css" />
 
     <title>Artsy UI</title>
   </head>
-  <body>
-    <header>
-      <div>
+
+  <body class=" doc-body">
+    <!--******** header *******-->
+    <header class="cl-header">
+      <a href="">
         <img
           alt="artsyui-logo"
           class="artsy-logo"
           src="/src/assets/logo-v2.png"
         />
-      </div>
+      </a>
       <div class="right-side">
         <a class="link-text-primary">Home</a>
         <a class="link-text-primary">Docs</a>
@@ -40,24 +44,36 @@
       </div>
     </header>
 
-    <img
-      alt="artsyui-logo"
-      class="main-page-logo"
-      src="/src/assets/logo-v2.png"
-    />
-    <h1>Welcome!!</h1>
-    <a href="src/components/avatar/avatar.html"
-      ><button class="btn main-btn">
-        Get Started
-        <svg viewBox="0 0 20 20">
-          <path
-            fill="#FFFFFF"
-            fill-rule="evenodd"
-            d="M15.5857864,13 L6,13 C5.44771525,13 5,12.5522847 5,12 C5,11.4477153 5.44771525,11 6,11 L15.5857864,11 L12.2928932,7.70710678 C11.9023689,7.31658249 11.9023689,6.68341751 12.2928932,6.29289322 C12.6834175,5.90236893 13.3165825,5.90236893 13.7071068,6.29289322 L18.7071068,11.2928932 C19.0976311,11.6834175 19.0976311,12.3165825 18.7071068,12.7071068 L13.7071068,17.7071068 C13.3165825,18.0976311 12.6834175,18.0976311 12.2928932,17.7071068 C11.9023689,17.3165825 11.9023689,16.6834175 12.2928932,16.2928932 L15.5857864,13 Z"
-          ></path>
-        </svg></button
-    ></a>
-
-    <main></main>
+    <main class="landing-page-main">
+      
+        <img
+          alt="artsyui-logo"
+          class="main-page-logo"
+          src="/src/assets/logo-v2.png"
+        />
+        <div>
+        <h1>Welcome!!</h1>
+      <div class="buttons-section">
+        <a href="src/components/avatar/avatar.html">
+          <button class="btn main-btn">
+            Get Started
+            <svg viewBox="0 0 20 20">
+              <path
+                fill="#FFFFFF"
+                fill-rule="evenodd"
+                d="M15.5857864,13 L6,13 C5.44771525,13 5,12.5522847 5,12 C5,11.4477153 5.44771525,11 6,11 L15.5857864,11 L12.2928932,7.70710678 C11.9023689,7.31658249 11.9023689,6.68341751 12.2928932,6.29289322 C12.6834175,5.90236893 13.3165825,5.90236893 13.7071068,6.29289322 L18.7071068,11.2928932 C19.0976311,11.6834175 19.0976311,12.3165825 18.7071068,12.7071068 L13.7071068,17.7071068 C13.3165825,18.0976311 12.6834175,18.0976311 12.2928932,17.7071068 C11.9023689,17.3165825 11.9023689,16.6834175 12.2928932,16.2928932 L15.5857864,13 Z"
+              ></path>
+            </svg>
+          </button>
+        </a>
+        <a href="https://github.com/bhtibrewal/artsy-ui">
+        <button class="btn sec-btn">
+          Github
+        </button>
+        </a>
+        </div>
+      </div>
+    </main>
+    <script src="/index.js"></script>
   </body>
 </html>
