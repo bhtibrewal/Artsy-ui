@@ -21,14 +21,13 @@ html {
 body {
   font-family:Nunito, sans-serif;
   font-size: 1.6rem;
-
   background: var(--light-bg);
-  color: var(--secondary-text);
+
 }
 :root {
-  --primary-color-darker: rgba(206, 122, 18);
+  --primary-color-darker: rgb(206, 122, 18);/*#ce7a12*/
   --primary-color: rgba(226, 132, 19); /*#e28413*/
-  --primary-color-lighter: rgba(235, 143, 30);
+  --primary-color-lighter: #eb8f1e;/*#eb8f1e*/
 
   --secondary-color: rgb(128, 5, 93); /*#80055d*/
 
@@ -38,6 +37,7 @@ body {
   --light-bg: rgb(252, 252, 252);
   --gray-bg: #d4d4d4;
 
+  --gray: #808080;
   --alert-primary-text: #084298;
   --alert-primary-bg: #cfe2ff;
   --success-text: #0f5132;

@@ -1,5 +1,7 @@
 @import url("./doc-utils.css");
 @import url("/src/doc/prism.css");
+@import url("/src/doc/getting-started.css");
+
 .doc-body {
   background: #dedede;
   font-family: sans-serif;

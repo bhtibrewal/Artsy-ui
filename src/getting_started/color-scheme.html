@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../../styles.css" />
-    <link rel="stylesheet" href="../../artsyUI.css" />
+    <link rel="stylesheet" href="../artsyUI.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    
     <title>Artsy UI</title>
 </head>
 
 <body class="cl-body">
     <!-- header -->
     <header class="cl-header">
-        <a href="../../../index.html">
-            <img alt="artsyui-logo" class="artsy-logo" src="../../assets/logo-v2.png" />
+        <a href="../../index.html">
+            <img alt="artsyui-logo" class="artsy-logo" src="../assets/logo-v2.png" />
         </a>
 
         <div class="right-side">
@@ -37,62 +38,75 @@
         <!-- Getting Started -->
         <h3>Getting Started</h3>
         <a href="">Introduction</a>
-        <a href="../../getting_started/typography.html">Typography</a>
+        <a class="active-tab" href="">Colors</a>
+        <a href="./typography.html">Typography</a>
 
         <!-- components -->
         <h3>Components</h4>
-            <a href="../alert/alert.html">Alert</a>
-            <a href="../avatar/avatar.html">Avatar</a>
-            <a href="../badge/badge.html">Badge</a>
-            <a href="../button/button.html">Button</a>
-            <a  href="../card/card.html">Card</a>
-            <a class="active-tab" href="">Image</a>
-            <a href="../input/input.html">Input</a>
+            <a href="../components/alert/alert.html">Alert</a>
+            <a href="../components/avatar/avatar.html">Avatar</a>
+            <a href="../components/badge/badge.html">Badge</a>
+            <a href="../components/button/button.html">Button</a>
+            <a href="../components/card/card.html">Card</a>
+            <a href="../components/image/image.html">Image</a>
+            <a href="../components/input/input.html">Input</a>
             <a href="">Form</a>
             <a href="">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main class="cl-main">
-        
-        <!-- image round -->
-        <h1>Image</h1>
-        <p class="body-l">
-            
-        </p>
+        <h1>Colors</h1>
+
         <div class="component-desc">
-            <h3>Round Image</h3>
-            <p >Add class <span class="highlight-text">img-round</span><br>
-            Here we used 2 images one with 800*400 and another 400*400</p>
+            <p class="body-l">This is the color palette used by Artsy UI</p>
+        </div>
+        <div class="color-container">
+            <span class="color-box">
+                <p>Primary Light </p>
+                <p class="body-md">#eb8f1e</p>
+            </span>
+            <span class="color-box">
+                <p>Primary </p>
+                <p class="body-md">#e28413</p>
+            </span>
+            <div class="color-box">
+                <p>Primary Dark</p>
+                <p class="body-md">#ce7a12</p>
+            </div>
+            <div class="color-box">
+                <p>Secondary</p>
+                <p class="body-md">#80055d</p>
+            </div>
         </div>
 
-        <div class="component-container">
-            <div class="artsy-img img-round ">
-                <img src="https://picsum.photos/800/400" alt ="random images" loading="lazy" />
-            </div>
-            <div class="artsy-img img-round ">
-                <img src="https://picsum.photos/400/400" alt ="random images" loading="lazy" />
-            </div>
-        </div>
-
-        <!-- image responsive -->
         <div class="component-desc">
-        <h3>Responsive Image</h3>
-        <p >By default, the images in artsy ui occupy 100% of their containers width and has object-fit: cover.</p>
+            <p class="body-l">This is the color palette used in the  the components</p>
         </div>
 
-        <div class="component-container">
-            <div class="artsy-img">
-                
-                <img src="https://picsum.photos/300/200" alt ="random images" loading="lazy" />
+        <div class="color-container">
+            <div class="color-box-2">
+                <p>Action</p>
+                <p class="body-md">#084298</p>
             </div>
-            <div class="artsy-img img-responsive">
-                <img src="https://picsum.photos/300/200" alt ="random images" loading="lazy" />
+            <div class="color-box-2">
+                <p>Success</p>
+                <p class="body-md">#0f5132</p>
+            </div>
+            <div class="color-box-2">
+                <p>Danger </p>
+                <p class="body-md">#842029</p>
+            </div>
+            <div class="color-box-2">
+                <p>Warning</p>
+                <p class="body-md">#664d03</p>
+            </div>
+            <div class="color-box-2">
+                <p>Not Available/Busy</p>
+                <p class="body-md">#664d03</p>
             </div>
             
         </div>
-
-
     </main>
 
     <!-- footer -->

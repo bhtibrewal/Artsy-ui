@@ -12,10 +12,8 @@ p,
 .h5,
 .h6,
 .p {
-
   letter-spacing: 0.03em;
   cursor:default;
-  color:var(--primary-text);
 }
 h1,
 .h1 {
@@ -59,6 +57,4 @@ p,
 .body-sm {
   font-size: 0.8rem;
 }
-p, .body-l, .body-md, .body-r, .body-sm{
-  color:var(--secondary-text);
-}
+
