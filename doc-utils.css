@@ -27,6 +27,8 @@
 .code_wrapper {
   background: var(--secondary-color);
 }
+
+/*  */
 .cl-header {
   display: flex;
   align-items: center;
@@ -69,16 +71,20 @@
   display: flex;
   flex-direction: column;
   padding: 3rem 0 0 6rem;
-  color: var(--secondary-color);
-  justify-content: center;
+  justify-content: center safe;
   overflow: auto;
 }
-aside a {
+.cl-aside a {
   font-size: 1.8rem;
   padding: 0.8rem;
 }
-aside > a:hover {
+.cl-aside a{
+  color: var(--secondary-color);
+  transition:padding 1s ease-out;
+}
+.cl-aside > a:hover {
   color: var(--primary-color);
+  padding-left:2rem;
 }
 .active-tab {
   cursor: pointer;
@@ -92,18 +98,16 @@ aside > a:hover {
   overflow-y: auto;
   padding: 5rem;
 }
-.cl-aside::-webkit-scrollbar-track {
-  /* display:none; */
-  visibility: hidden;
-  background-color: blue;
+
+.cl-aside::-webkit-scrollbar {
+  height: 1rem;
+  
 }
-::-webkit-scrollbar-thumb {
-  /* display:none; */
-  background-color: blue;
+.cl-aside::-webkit-scrollbar-thumb {
+  background: rgb(250, 213, 6);
+  border-radius:1rem;
 }
-.cl-main::-webkit-scrollbar-button {
-  background-color: blue;
-}
+
 .cl-body {
   height: 100vh;
   max-width: 100%;

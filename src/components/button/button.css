@@ -12,6 +12,7 @@
   background: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .btn .button-icon, .btn svg {
@@ -66,7 +67,7 @@
   border-radius: 50%;
   background: var(--primary-color);
   color: var(--light-text);
-  width: 5rem;
+  aspect-ratio:1;
   height: 5rem;
   display: grid;
   place-content: center;

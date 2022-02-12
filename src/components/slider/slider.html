@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../artsyUI.css" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
 </head>
 
 <body class="cl-body">
     <!-- header -->
     <header class="cl-header">
-        <a href="../../index.html">
-            <img alt="artsyui-logo" class="artsy-logo" src="../assets/logo-v2.png" />
+        <a href="../../../index.html">
+            <img alt="artsyui-logo" class="artsy-logo" src="../../assets/logo-v2.png" />
         </a>
 
         <div class="right-side">
@@ -37,65 +37,34 @@
         <!-- Getting Started -->
         <h3>Getting Started</h3>
         <a href="">Introduction</a>
-        <a href="./color-scheme.html">Colors</a>
-        <a class="active-tab" href="">Typography</a>
+        <a href="../../getting_started/typography.html">Typography</a>
 
         <!-- components -->
         <h3>Components</h4>
-            <a href="../components/alert/alert.html">Alert</a>
-            <a href="../components/avatar/avatar.html">Avatar</a>
-            <a href="../components/badge/badge.html">Badge</a>
-            <a href="../components/button/button.html">Button</a>
-            <a href="../components/card/card.html">Card</a>
-            <a href="../components/image/image.html">Image</a>
-            <a href="../components/input/input.html">Input</a>
+            <a href="../alert/alert.html">Alert</a>
+            <a href="../avatar/avatar.html">Avatar</a>
+            <a href="../badge/badge.html">Badge</a>
+            <a href="../button/button.html">Button</a>
+            <a  href="../card/card.html">Card</a>
+            <a class="active-tab" href="">Image</a>
+            <a href="../input/input.html">Input</a>
             <a href="">Form</a>
             <a href="">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main class="cl-main">
-
-        <h1>Colors</h1>
-        <p class="note-text">Note: Artsy UI has a root font size set to 62.5% (1rem=10px)</p>
-
-        <div class="component-desc">
-            <h3>Headings</h3>
-        </div>
-
-        <div class="component-container heading-container">
-            <div class="tp-box">
-                <h1>Heading 1</h1>
-                <b class="font-det">Font-size: 4.8rem</b>
-            </div>
-            <div class="tp-box">
-                <h2>Heading 2</h2>
-                <b class="font-det">Font-size: 3.2rem</b>
-            </div>
-            <div class="tp-box">
-                <h3>Heading 3</h3>
-                <b class="font-det">Font-size: 2.4rem</b>
-            </div>
-            <div class="tp-box">
-                <h4>Heading 4</h4>
-                <b class="font-det">Font-size: 1.6rem</b>
-            </div>
+        
+        <!-- image round -->
+        <h1>Slider</h1>
+        <p class="body-l">
             
-        </div>
+        </p>
 
-        <div class="component-desc">
-            <h3>Body</h3>
-            <p>By default, body has a font-size of 16px </p>
-        </div>
-
-        <div class="component-container heading-container">
-            <p class="body-l">Large Text</p>
-            <p class="body-r">Regular Text</p>
-            <p class="body-md">Medium Text</p>
-            <p class="body-sm">Small Text</p>
-
-            <p class="body-l gray-text">Gray Text</p>
-            <p class="body-l center-text">Center Text</p>
+        <div class="component-container">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
         </div>
 
     </main>
