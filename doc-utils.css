@@ -98,18 +98,16 @@
   overflow-y: auto;
   padding: 5rem;
 }
-.cl-aside::-webkit-scrollbar-track {
-  /* display:none; */
-  visibility: hidden;
-  background-color: blue;
+
+.cl-aside::-webkit-scrollbar {
+  height: 1rem;
+  
 }
-::-webkit-scrollbar-thumb {
-  /* display:none; */
-  background-color: blue;
+.cl-aside::-webkit-scrollbar-thumb {
+  background: rgb(250, 213, 6);
+  border-radius:1rem;
 }
-.cl-main::-webkit-scrollbar-button {
-  background-color: blue;
-}
+
 .cl-body {
   height: 100vh;
   max-width: 100%;

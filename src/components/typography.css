@@ -57,4 +57,9 @@ p,
 .body-sm {
   font-size: 0.8rem;
 }
-
+.gray-text{
+color: var(--secondary-text);
+}
+.center-text{
+  text-align: center;
+}

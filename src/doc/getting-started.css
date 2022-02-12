@@ -8,7 +8,9 @@
 .tp-box{
     display:flex;
     align-items: center;
-    justify-content:space-between;
+}
+.font-det{
+  margin-left: auto;
 }
 .color-container {
   display: flex;
