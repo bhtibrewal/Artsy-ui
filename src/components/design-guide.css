@@ -28,8 +28,10 @@ body {
   --primary-color-darker: rgb(206, 122, 18);/*#ce7a12*/
   --primary-color: rgba(226, 132, 19); /*#e28413*/
   --primary-color-lighter: #eb8f1e;/*#eb8f1e*/
+  --primary-color_op-half: rgba(226, 132, 19, 0.5);
 
   --secondary-color: rgb(128, 5, 93); /*#80055d*/
+  --secondary-color_op-half: rgb(128, 5, 93, 0.5);
 
   --primary-text: rgb(46, 46, 46);
   --secondary-text: rgb(73, 73, 73); /*#737373*/
@@ -54,4 +56,8 @@ body {
 
   --input-err: red;
   --input-success: green;
+
+  --snackbar-bg: #333;
+  --snackbar-theme: #bb86fc;
+  --snackbar-hover-bg: #392d49;
 }

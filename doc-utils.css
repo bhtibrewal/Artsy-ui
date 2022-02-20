@@ -65,6 +65,9 @@
   place-content: center;
   margin: 0.5rem;
 }
+.heart-logo{
+  color:var(--input-err);
+}
 
 .cl-aside {
   grid-area: aside;
@@ -99,12 +102,12 @@
   padding: 5rem;
 }
 
-.cl-aside::-webkit-scrollbar {
-  height: 1rem;
+.cl-aside::-webkit-scrollbar,.cl-main::-webkit-scrollbar {
+  width: 1rem;
   
 }
-.cl-aside::-webkit-scrollbar-thumb {
-  background: rgb(250, 213, 6);
+.cl-aside::-webkit-scrollbar-thumb,.cl-main::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
   border-radius:1rem;
 }
 

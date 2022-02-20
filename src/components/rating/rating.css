@@ -1,0 +1,28 @@
+.rating-container {
+  justify-content: space-between;
+}
+
+.artsy-rating ,
+.artsy-rating-sec  {
+  font-size: 1.5em;
+}
+/* first version */
+.artsy-rating  {
+  color: var(--primary-color_op-half);
+}
+.artsy-rating .filled {
+  color: var(--primary-color);
+}
+.artsy-rating i:hover {
+  color: var(--primary-color);
+}
+/* second version */
+.artsy-rating-sec  {
+  color: var(--secondary-color_op-half);
+}
+.artsy-rating-sec .filled {
+  color: var(--secondary-color);
+}
+.artsy-rating-sec i:hover  {
+  color: var(--secondary-color);
+}

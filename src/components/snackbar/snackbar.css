@@ -1,0 +1,36 @@
+.snackbar {
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--snackbar-bg);
+  border-radius: 0.25rem;
+  color: var(--primary-text-color);
+  color: var(--light-bg);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem var(--snackbar-bg);
+}
+.snackbar-btn {
+  background: var(--snackbar-hover-bg);
+  color: var(--light-bg);
+}
+.snackbar .close {
+  color: var(--light-bg);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+}
+.snackbar .retry {
+  color: var(--snackbar-theme);
+  background: transparent;
+}
+.snackbar .retry:active,
+.snackbar .retry:hover {
+  background: var(--snackbar-hover-bg);
+}
+.snackbar-2 {
+  z-index: 4;
+  display: none;
+  position: fixed;
+  bottom: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
