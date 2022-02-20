@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
   </head>
+
   <body class="cl-body">
     <!-- header -->
     <header class="cl-header">
@@ -19,128 +19,96 @@
       </a>
       <div class="right-side">
         <a href="/index.html" class="link-text-primary">Home</a>
-        <a href="/src/getting_started/introduction.html" class="link-text-primary">Docs</a>
+        <a
+          href="/src/getting_started/introduction.html"
+          class="link-text-primary"
+          >Docs</a
+        >
         <i class="fa-solid fa-moon mode-toggle"></i>
       </div>
     </header>
 
-    <!-- aside start -->
+    <!--******** aside *******-->
     <aside class="cl-aside">
       <!-- Getting Started -->
       <h3>Getting Started</h3>
       <a href="/src/getting_started/introduction.html">Introduction</a>
       <a href="/src/getting_started/typography.html">Typography</a>
       <a href="/src/getting_started/color-scheme.html">Colors</a>
-
       <!-- components -->
-      <h3>Components</h3>
+      <h4>Components</h4>
       <a href="../alert/alert.html">Alert</a>
       <a href="../avatar/avatar.html">Avatar</a>
-      <a class="active-tab" href="">Badge</a>
+      <a href="../badge/badge.html">Badge</a>
       <a href="../button/button.html">Button</a>
       <a href="../card/card.html">Card</a>
       <a href="../image/image.html">Image</a>
       <a href="../input/input.html">Input</a>
-      <a href="../modal/modal.html">Modal</a>
+      <a class="active-tab" href="">Modal</a>
       <a href="../rating/rating.html">Rating</a>
       <a href="../snackbar/snackbar.html">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main class="cl-main">
-      <!-- Avatar w/badge -->
-      <h1>Badge</h1>
+      <h1>Modal</h1>
       <p class="body-l">
-        Badges are being used to display a notification count or status
-        information
+        The modal component provides a solid foundation for creating dialogs,
+        popovers, lightboxes, or whatever else.
       </p>
-      <div class="component-desc">
-        <h3>Avatar with Status Badge</h3>
-        <p>
-          We have 3 types of status badges that can be integrated with Avatars.
-          You can show colors to show the online status of user.
-        </p>
-
-        <ul class="list">
-          <li>
-            Online: Green (<span class="highlight-text"
-              >class: avatar-online</span
-            >)
-          </li>
-          <li>
-            Offline: Red (<span class="highlight-text"
-              >class: avatar-offline</span
-            >)
-          </li>
-          <li>
-            Not Available: Gray (<span class="highlight-text"
-              >class: avatar-away</span
-            >)
-          </li>
-        </ul>
-        <p>
-          And to show cart or notification count, you can use number badge.
-          Check code below to copy the html part as is.
-        </p>
-      </div>
-      <div class="component-container avatar-container">
-        <div class="avatar avatar-online avatar-m">
-          <img
-            src="https://avatars.githubusercontent.com/u/42600164?v=4"
-            alt="avatar"
-          />
-        </div>
-        <div class="avatar avatar-offline avatar-m">
-          <img
-            src="https://avatars.githubusercontent.com/u/42600164?v=4"
-            alt="avatar"
-          />
-        </div>
-        <div class="avatar avatar-away avatar-m">
-          <img
-            src="https://avatars.githubusercontent.com/u/42600164?v=4"
-            alt="avatar"
-          />
-        </div>
+      <div class="component-container">
+        Click on this button to open modal >>
+        <button class="btn btn-primary" onclick="openModal()">
+          Open Modal
+        </button>
       </div>
 
       <!-- code snippet -->
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-          <div class="avatar avatar-online avatar-m">
-            <!-- image -->
-          </div>
-          <div class="avatar avatar-offline avatar-m">
-            <!-- image -->
-          </div>
-          <div class="avatar avatar-away avatar-m">
-            <!-- image -->
+          <div class="modal-overlay">
+              <button class="btn overlay-close-btn" onclick="closeFunc(this)">
+                  <i class="fa-solid fa-x "></i>
+              </button>
+
+              <div class="modal">
+                 <!-- content here -->
+              </div>
           </div>
         </script>
       </div>
 
-      <!-- badge on icon -->
-      <div class="component-desc">
-        <h3>Badge on icon</h3>
-      </div>
-      <div class="component-container avatar-container">
-        <div class="icon-badge">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="badge">25</span>
-        </div>
-      </div>
-
       <!-- code snippet -->
       <div class="code_wrapper">
-        <script type="text/plain" class="line-numbers language-markup">
-          <div class="icon-badge">
-            <!-- icon -->
-            <span class="badge">25</span>
-          </div>
+        <script type="text/plain" class="line-numbers language-javascript">
+          Javascript Code
+          const modal = document.querySelector(".modal-overlay")
+          const closeFunc = (e) => {
+              e.parentElement.style.display = "none";
+          }
+          const openModal=()=>{
+              modal.style.display = "flex";
+          }
         </script>
       </div>
     </main>
+    <div class="modal-overlay">
+      <button class="btn overlay-close-btn" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
 
+      <div class="modal">
+        <h3>Learn everything about contemporary art.</h3>
+        <p>Subscribe to our newsletter to get 10% off!!</p>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <button class="btn btn-primary">
+          <span>Subscribe</span>
+        </button>
+      </div>
+    </div>
     <!-- footer -->
     <footer class="cl-footer flex-align-center">
       <div class="social-logos flex-align-center">
@@ -148,6 +116,7 @@
         <a href="https://github.com/bhtibrewal">
           <i class="fa-brands fa-github fa-lg"></i>
         </a>
+        <i class="fa-brands fa-github fa-lg"></i>
         <!-- twitter icon -->
         <i class="fa-brands fa-twitter fa-lg"></i>
         <!-- linkedin icon -->
@@ -159,11 +128,14 @@
         by Bhavika Tibrewal
       </div>
     </footer>
+
+    <!-- To Top button -->
     <button class="to-top-btn floating-btn">
       <i class="fa-solid fa-rocket fa-lg"></i>
     </button>
 
     <script src="/src/doc/prism.js"></script>
+    <script src="./modal.js"></script>
     <script src="/index.js"></script>
     <script
       src="https://kit.fontawesome.com/617c60ee1d.js"
