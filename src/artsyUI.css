@@ -13,4 +13,6 @@
 @import "./components/card/card.css";
 @import "./components/image/image.css";
 @import "./components/input/input.css";
-@import "./components/slider/slider.css";
+@import "./components/modal/modal.css";
+@import "./components/rating/rating.css";
+@import "./components/snackbar/snackbar.css";

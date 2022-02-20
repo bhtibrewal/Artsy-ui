@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
@@ -29,14 +28,13 @@
       </div>
     </header>
 
-    <!-- aside start -->
+    <!--******** aside *******-->
     <aside class="cl-aside">
       <!-- Getting Started -->
       <h3>Getting Started</h3>
       <a href="/src/getting_started/introduction.html">Introduction</a>
       <a href="/src/getting_started/typography.html">Typography</a>
       <a href="/src/getting_started/color-scheme.html">Colors</a>
-
       <!-- components -->
       <h3>Components</h3>
       <a href="../alert/alert.html">Alert</a>
@@ -44,82 +42,73 @@
       <a href="../badge/badge.html">Badge</a>
       <a href="../button/button.html">Button</a>
       <a href="../card/card.html">Card</a>
-      <a class="active-tab" href="">Image</a>
+      <a href="../image/image.html">Image</a>
       <a href="../input/input.html">Input</a>
-      <a href="../modal/modal.html">Modal</a>
+      <a class="active-tab" href="">Modal</a>
       <a href="../rating/rating.html">Rating</a>
       <a href="../snackbar/snackbar.html">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main class="cl-main">
-      <!-- image round -->
-      <h1>Image</h1>
-      <p class="body-l"></p>
-      <div class="component-desc">
-        <h3>Round Image</h3>
-        <p>
-          Add class <span class="highlight-text">img-round</span><br />
-          Here we used 2 images one with 800*400 and another 400*400
-        </p>
-      </div>
-
+      <h1>Modal</h1>
+      <p class="body-l">
+        The modal component provides a solid foundation for creating dialogs,
+        popovers, lightboxes, or whatever else.
+      </p>
       <div class="component-container">
-        <div class="artsy-img img-round w-30">
-          <img
-            src="https://picsum.photos/800/400"
-            alt="random images"
-            loading="lazy"
-          />
-        </div>
-        <div class="artsy-img img-round w-30">
-          <img
-            src="https://picsum.photos/400/400"
-            alt="random images"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
-      <!-- image responsive -->
-      <div class="component-desc">
-        <h3>Responsive Image</h3>
-        <p>
-          By default, the images in artsy ui occupy 100% of their containers
-          width and has object-fit: cover.
-        </p>
-      </div>
-
-      <div class="component-container">
-        <div class="artsy-img">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="random images"
-            loading="lazy"
-          />
-        </div>
-        <div class="artsy-img img-responsive">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="random images"
-            loading="lazy"
-          />
-        </div>
+        Click on this button to open modal >>
+        <button class="btn btn-primary" onclick="openModal()">
+          Open Modal
+        </button>
       </div>
 
       <!-- code snippet -->
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-          <div class="artsy-img">
-              <!-- image -->
-          </div>
-          <div class="artsy-img img-responsive">
-              <!-- image -->
+          <div class="modal-overlay">
+              <button class="btn overlay-close-btn" onclick="closeFunc(this)">
+                  <i class="fa-solid fa-x "></i>
+              </button>
+
+              <div class="modal">
+                 <!-- content here -->
+              </div>
           </div>
         </script>
       </div>
-    </main>
 
+      <!-- code snippet -->
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-javascript">
+          Javascript Code
+          const modal = document.querySelector(".modal-overlay")
+          const closeFunc = (e) => {
+              e.parentElement.style.display = "none";
+          }
+          const openModal=()=>{
+              modal.style.display = "flex";
+          }
+        </script>
+      </div>
+    </main>
+    <div class="modal-overlay">
+      <button class="btn overlay-close-btn" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+
+      <div class="modal">
+        <h3>Learn everything about contemporary art.</h3>
+        <p>Subscribe to our newsletter to get 10% off!!</p>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <button class="btn btn-primary">
+          <span>Subscribe</span>
+        </button>
+      </div>
+    </div>
     <!-- footer -->
     <footer class="cl-footer flex-align-center">
       <div class="social-logos flex-align-center">
@@ -127,6 +116,7 @@
         <a href="https://github.com/bhtibrewal">
           <i class="fa-brands fa-github fa-lg"></i>
         </a>
+        <i class="fa-brands fa-github fa-lg"></i>
         <!-- twitter icon -->
         <i class="fa-brands fa-twitter fa-lg"></i>
         <!-- linkedin icon -->
@@ -145,6 +135,7 @@
     </button>
 
     <script src="/src/doc/prism.js"></script>
+    <script src="./modal.js"></script>
     <script src="/index.js"></script>
     <script
       src="https://kit.fontawesome.com/617c60ee1d.js"
