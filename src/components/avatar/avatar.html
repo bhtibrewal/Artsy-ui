@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/617c60ee1d.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
@@ -16,31 +12,15 @@
   <body class="cl-body">
     <!--******** header *******-->
     <header class="cl-header">
-      <a href="../../../index.html">
+      <a class="flex-align-center" href="/index.html">
         <img class="artsy-logo" src="../../assets/logo-v2.png" />
+        <h3><b>Artsy UI</b></h3>
+        <span>v1.0</span>
       </a>
-
-      <!--  -->
       <div class="right-side">
-        <a class="link-text-primary">Home</a>
-        <a class="link-text-primary">Docs</a>
-        <div class="mode-toggle">
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 512 512"
-            aria-hidden="true"
-            focusable="false"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
-            ></path>
-          </svg>
-        </div>
+        <a href="/index.html" class="link-text-primary">Home</a>
+        <a href="/src/getting_started/introduction.html" class="link-text-primary">Docs</a>
+        <i class="fa-solid fa-moon mode-toggle"></i>
       </div>
     </header>
 
@@ -48,9 +28,10 @@
     <aside class="cl-aside">
       <!-- Getting Started -->
       <h3>Getting Started</h3>
-      <a href="">Introduction</a>
-      <a href="../../getting_started/typography.html">Typography</a>
-
+      <a href="/src/getting_started/introduction.html">Introduction</a>
+      <a href="/src/getting_started/typography.html">Typography</a>
+      <a href="/src/getting_started/color-scheme.html">Colors</a>
+     
       <!-- components -->
       <h3>Components</h3>
       <a href="../alert/alert.html">Alert</a>
@@ -93,25 +74,40 @@
       </div>
 
       <div class="component-container avatar-container">
-        <div class="avatar avatar-l flex-items">
+        <div class="avatar avatar-l">
           <img
             src="https://en.pimg.jp/066/175/574/1/66175574.jpg"
             alt="avatar"
           />
         </div>
-        <div class="avatar avatar-m flex-items">
+        <div class="avatar avatar-m">
           <img
             src="https://media.istockphoto.com/vectors/man-artist-painting-autumn-tree-landscape-in-the-park-isolated-vector-vector-id1058684612?k=20&m=1058684612&s=612x612&w=0&h=edHBtI190lKLq_a0YbCWSliJ_FyHsPcysvOZ6fK_Ap0="
             alt="avatar"
           />
         </div>
-        <div class="avatar avatar-s flex-items">
+        <div class="avatar avatar-s">
           <img
             src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX28663958.jpg"
             alt="avatar"
           />
         </div>
       </div>
+
+       <!-- code snippet -->
+    <div class="code_wrapper">
+      <script type="text/plain" class="line-numbers language-markup">
+        <div class="avatar avatar-l">
+          <!-- image -->
+        </div>
+        <div class="avatar avatar-m">
+          <!-- image -->
+        </div>
+        <div class="avatar avatar-s">
+          <!-- image -->
+        </div>
+      </script>
+    </div>
 
       <!-- Text Avatar -->
       <div class="component-desc">
@@ -128,103 +124,40 @@
         <div class="avatar-text avatar-m">BT</div>
         <div class="avatar-text avatar-s">BT</div>
       </div>
+
+       <!-- code snippet -->
+    <div class="code_wrapper">
+      <script type="text/plain" class="line-numbers language-markup">
+        <div class="avatar-text avatar-l"><!-- text --></div>
+        <div class="avatar-text avatar-m"><!-- text --></div>
+        <div class="avatar-text avatar-s"><!-- text --></div>
+      </script>
+    </div>
     </main>
 
     <!--******** footer *******-->
     <footer class="cl-footer flex-align-center">
       <div class="social-logos flex-align-center">
         <!-- github icon -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          class="iconify iconify--octicon"
-          width="32"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            fill="currentColor"
-          ></path>
-        </svg>
+        <i class="fa-brands fa-github fa-lg"></i>
         <!-- twitter icon -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          class="iconify iconify--simple-line-icons"
-          width="36.58"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 1024 896"
-        >
-          <path
-            d="M684 95q80 0 135 56q62-12 116-43q-21 64-80 98q55-6 105-28q-12 18-26.5 34.5t-31 31T868 271q1 12 1 23q0 59-15.5 119t-45 117t-75 106t-102 86t-130 58T346 801q-153 0-282-80q11 1 21.5 2t22.5 1q128 0 228-77q-60-1-107-35.5T164 523q6 1 11.5 2t11.5 1.5t12 .5q25 0 48-7q-63-12-105-61t-42-114v-2q39 21 83 22q-25-16-43-38.5t-28.5-51T101 217q0-24 6.5-47t18.5-43q69 83 167.5 132T505 314q-5-20-5-41q0-74 54-126t130-52zm276 83zM684 31q-93 0-163 60.5T439 241Q278 209 175 86q-19-23-49-23l-5 1q-33 2-50 30q-34 57-34 123q0 43 15 83q-16 19-16 43v2q0 95 66 165q-2 8-1.5 16.5T103 543q22 65 74 109q-17 4-34.5 6t-34.5 2q-20 0-37-2l-7-1q-21 0-37.5 12T3 700q-7 21 .5 42.5T30 775q144 90 316 90q106 0 200-31.5T709 747t119.5-126.5t77-153T933 302q45-37 78-85q7-8 10-18t3-21q0-33-27-52q3-13 2-25t-7-23.5T976 58q-18-14-41-14q-4 0-8 .5t-8 1.5t-8 2.5t-8 3.5q-31 19-67 29q-68-50-152-50z"
-            fill="currentColor"
-          ></path>
-        </svg>
+        <i class="fa-brands fa-twitter fa-lg"></i>
         <!-- linkedin icon -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          class="iconify iconify--ri"
-          width="32"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21h32v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
-            fill="currentColor"
-          ></path>
-        </svg>
+        <i class="fa-brands fa-linkedin fa-lg"></i>
       </div>
       <div class="flex-align-center">
         Made with
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          class="heart-logo iconify iconify--mdi"
-          width="32"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3z"
-            fill="currentColor"
-          ></path>
-        </svg>
+        <i class="heart-logo fa-solid fa-heart"></i>
         by Bhavika Tibrewal
       </div>
     </footer>
     <button class="to-top-btn floating-btn">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        aria-hidden="true"
-        role="img"
-        class="iconify iconify--mdi"
-        width="32"
-        height="32"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12z"
-          fill="currentColor"
-        ></path>
-      </svg>
-    </button>
-    <script src="../../../index.js"></script>
+      <i class="fa-solid fa-rocket fa-lg"></i>
+    </button><script src="/src/doc/prism.js"></script>
+    <script src="/index.js"></script>
+    <script
+        src="https://kit.fontawesome.com/617c60ee1d.js"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>

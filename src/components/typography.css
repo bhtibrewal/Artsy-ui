@@ -57,6 +57,9 @@ p,
 .body-sm {
   font-size: 0.8rem;
 }
+.primary-text{
+  color:var(--primary-color);
+}
 .gray-text{
 color: var(--secondary-text);
 }

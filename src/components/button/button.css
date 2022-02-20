@@ -15,11 +15,15 @@
   justify-content: center;
   gap: 1rem;
 }
+.btn .center{
+  margin:auto;
+}
 .btn .button-icon, .btn svg {
   width: 1.6rem;
   display: grid;
   place-items: center;
   height: 1.6rem;
+  font-size:.8em;
 }
 .btn-primary {
   background: var(--primary-color);
@@ -95,7 +99,7 @@
 }
 
 /* The slider */
-.slider {
+.switch-btn {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -106,7 +110,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.slider:before {
+.switch-btn:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -116,22 +120,22 @@
   background-color: var(--light-text);
   transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-input:checked + .slider {
+input:checked + .switch-btn {
   background-color: var(--primary-color);
 }
-input:focus + .slider {
+input:focus + .switch-btn {
   box-shadow: 0 0 1px var(--primary-color);
 }
-input:checked + .slider:before {
+input:checked + .switch-btn:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
 /* Rounded sliders */
-.slider.round {
+.switch-btn.round {
   border-radius: 34px;
 }
-.slider.round:before {
+.switch-btn.round:before {
   border-radius: 50%;
 }
