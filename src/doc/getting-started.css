@@ -1,3 +1,4 @@
+/* typograohy page */
 .heading-container {
   display: block;
 }
@@ -12,6 +13,8 @@
 .font-det{
   margin-left: auto;
 }
+
+/* color scheme page*/
 .color-container {
   display: flex;
   margin: 2rem 0;
@@ -53,4 +56,19 @@
 }
 .color-box-2:nth-child(5) {
   background: var(--seconadry-text);
+}
+
+/* grid pagee */
+.grid-wrapper{
+border: 1px solid var(--secondary-text);
+border-radius: .4rem;
+padding: 1rem;
+margin:2rem 0;
+background: var(--gray);
+}
+.grid-wrapper>*>*{
+  background: var(--light-bg);
+  border-radius:.4rem;
+  display:grid;
+  place-content:center;
 }

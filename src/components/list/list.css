@@ -1,0 +1,13 @@
+.artsy-list{
+    list-style: none;
+    color: var(--secondary-color);
+    border:1px solid var(--secondary-color);
+    padding: 1rem 2rem;
+    border-radius:.4rem;
+}
+.artsy-list .list-heading{
+    color:var(--primary-color);
+}
+.artsy-list i{
+    margin-right:1rem;
+}

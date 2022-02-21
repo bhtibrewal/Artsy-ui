@@ -103,7 +103,7 @@
 }
 
 .cl-aside::-webkit-scrollbar,.cl-main::-webkit-scrollbar {
-  width: 1rem;}
+  width: 1rem;
 }
 .cl-aside::-webkit-scrollbar-thumb,.cl-main::-webkit-scrollbar-thumb{
   background: var(--secondary-color);

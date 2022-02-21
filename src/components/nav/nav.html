@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="../../../styles.css" />
     <link rel="stylesheet" href="../../artsyUI.css" />
     <title>Artsy UI</title>
@@ -29,7 +28,7 @@
       </div>
     </header>
 
-    <!-- aside start -->
+    <!--******** aside *******-->
     <aside class="cl-aside">
       <!-- Getting Started -->
       <h3>Getting Started</h3>
@@ -43,82 +42,55 @@
       <a href="../alert/alert.html">Alert</a>
       <a href="../avatar/avatar.html">Avatar</a>
       <a href="../badge/badge.html">Badge</a>
-      <a href="../button/button.html">Button</a>
+      <a href="">Button</a>
       <a href="../card/card.html">Card</a>
-      <a class="active-tab" href="">Image</a>
+      <a href="../image/image.html">Image</a>
       <a href="../input/input.html">Input</a>
       <a href="../list/list.html">List</a>
       <a href="../modal/modal.html">Modal</a>
-      <a href="../nav/nav.html">Navigation</a>
+      <a class="active-tab" href="">Navigation</a>
       <a href="../rating/rating.html">Rating</a>
       <a href="../snackbar/snackbar.html">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main class="cl-main">
-      <!-- image round -->
-      <h1>Image</h1>
-      <p class="body-l"></p>
-      <div class="component-desc">
-        <h3>Round Image</h3>
-        <p>
-          Add class <span class="highlight-text">img-round</span><br />
-          Here we used 2 images one with 800*400 and another 400*400
-        </p>
-      </div>
-
-      <div class="component-container">
-        <div class="artsy-img img-round w-30">
-          <img
-            src="https://picsum.photos/800/400"
-            alt="random images"
-            loading="lazy"
-          />
+      <h1>Navigation</h1>
+      <p class="body-l">
+        The App Bar displays information and actions relating to the current
+        screen.<br />
+        The top App Bar provides content and actions related to the current
+        screen. It's used for branding, screen titles, navigation, and actions.
+      </p>
+      <p>Navbar is an important component of any website, to get a prefectly styled navbar in your project just copy the below HTML code and you are good to go.</p>
+      <br />
+      <header class="artsy-header">
+        <div class="left-side">
+          <img alt="" class="logo" src="../../assets/logo-v2.png" />
+          <h3><b>Artsy UI</b></h3>
+          <span>v1.0</span>
         </div>
-        <div class="artsy-img img-round w-30">
-          <img
-            src="https://picsum.photos/400/400"
-            alt="random images"
-            loading="lazy"
-          />
+        <div class="right-side">
+          <a href="" class="link-text-primary">Home</a>
+          <a href="" class="link-text-primary">Docs</a>
+          <i class="fa-solid fa-moon"></i>
         </div>
-      </div>
-
-      <!-- image responsive -->
-      <div class="component-desc">
-        <h3>Responsive Image</h3>
-        <p>
-          By default, the images in artsy ui occupy 100% of their containers
-          width and has object-fit: cover.
-        </p>
-      </div>
-
-      <div class="component-container">
-        <div class="artsy-img">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="random images"
-            loading="lazy"
-          />
-        </div>
-        <div class="artsy-img img-responsive">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="random images"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
+      </header>
+      <br />
       <!-- code snippet -->
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-          <div class="artsy-img">
-              <!-- image -->
-          </div>
-          <div class="artsy-img img-responsive">
-              <!-- image -->
-          </div>
+          <header class="artsy-header">
+            <div class="left-side">
+              <img alt="" class="logo" src="../../assets/logo-v2.png" />
+              <h3><b>Artsy UI</b></h3>
+              <span>v1.0</span>
+            </div>
+            <div class="right-side">
+              <a href="" class="link-text-primary">Home</a>
+              <a href="" class="link-text-primary">Docs</a>
+              <i class="fa-solid fa-moon"></i>
+            </div>
         </script>
       </div>
     </main>
@@ -142,7 +114,7 @@
       </div>
     </footer>
 
-    <!-- To Top button -->
+    <!-- to top btn -->
     <button class="to-top-btn floating-btn">
       <i class="fa-solid fa-rocket fa-lg"></i>
     </button>

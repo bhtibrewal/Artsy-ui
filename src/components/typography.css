@@ -60,6 +60,9 @@ p,
 .primary-text{
   color:var(--primary-color);
 }
+.secondary-color-text{
+  color:var(--secondary-color);
+}
 .gray-text{
 color: var(--secondary-text);
 }
