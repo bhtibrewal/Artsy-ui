@@ -2,7 +2,7 @@
 
 <h1 align=center>Artsy UI</h1>
 <h3 align=center>By Bhavika Tibrewal</h3>
-<p align=center> Live Preview : <a href=" https://artsyui.netlify.app/">Artsy UI</a></p>
+ Live Preview : [Artsy UI](https://artsyui.netlify.app/)
 
 Arsty UI has a robust set of pre build components, styled to help you quickly build amazing websites.With Artsy UI spend less time in designing and concentrate more on logic without hustling on UI.
 
