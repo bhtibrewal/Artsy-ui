@@ -1,20 +1,7 @@
-<link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
-<style>
-	html{
-		font-size:72.5%;
-	}
-    body{
-        background:#272a2c;
-    }
-	a{
-		text-decoration:underline;
-	}
-</style>
-
 ![image](/src/assets/logo-v2.png)
 
-<h1 class="primary-text" align=center>Artsy UI</h1>
-<h3 class="secondary-text-color" align=center>By Bhavika Tibrewal</h3>
+<h1 align=center>Artsy UI</h1>
+<h3 align=center>By Bhavika Tibrewal</h3>
 <p align=center> Live Preview : <a href=" https://artsyui.netlify.app/">Artsy UI</a></p>
 
 Arsty UI has a robust set of pre build components, styled to help you quickly build amazing websites.With Artsy UI spend less time in designing and concentrate more on logic without hustling on UI.
@@ -27,7 +14,6 @@ To import Artsy UI in your Project paste the below code in the head tag of your 
 <link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
 ```
 
-<br>
 
 ## Getting Started
 
