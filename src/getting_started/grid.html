@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../artsyUI.css" />
     <link rel="stylesheet" href="../../styles.css" />
 
     <title>Artsy UI</title>
-</head>
+  </head>
 
-<body class="cl-body">
+  <body class="cl-body">
     <!-- header -->
     <header class="cl-header">
+      <div class="flex-align-center">
+        <button class="btn hamburger">
+          <i class="fa-solid fa-bars primary-text"></i>
+        </button>
+
         <a class="flex-align-center" href="/index.html">
-            <img alt="artsyui-logo" class="artsy-logo" src="../assets/logo-v2.png" />
-
-            <h3><b>Artsy UI</b></h3>
-            <span>v1.0</span>
+          <img
+            alt="artsyui-logo"
+            class="artsy-logo"
+            src="/src/assets/logo-v2.png"
+          />
+          <h3><b>Artsy UI</b></h3>
+          <span>v1.0</span>
         </a>
+      </div>
 
-        <div class="right-side">
-            <a href="/index.html" class="link-text-primary">Home</a>
-            <a href="./introduction.html" class="link-text-primary">Docs</a>
-            <i class="fa-solid fa-moon mode-toggle"></i>
-        </div>
+      <div class="right-side">
+        <a href="/index.html" class="link-text-primary">Home</a>
+        <a href="./introduction.html" class="link-text-primary">Docs</a>
+        <i class="fa-solid fa-moon mode-toggle"></i>
+      </div>
     </header>
 
     <!-- aside start -->
     <aside class="cl-aside">
-        <!-- Getting Started -->
-        <h3>Getting Started</h3>
-        <a href="./introduction.html">Introduction</a>
-        <a href="./typography.html">Typography</a>
-        <a href="./color-scheme.html">Colors</a>
-        <a class="active-tab" href="">Grid </a>
+      <!-- Getting Started -->
+      <h3>Getting Started</h3>
+      <a href="./introduction.html">Introduction</a>
+      <a href="./typography.html">Typography</a>
+      <a href="./color-scheme.html">Colors</a>
+      <a class="active-tab" href="">Grid </a>
 
-        <!-- components -->
-        <h3>Components</h3>
-        <a href="../components/alert/alert.html">Alert</a>
-        <a href="../components/avatar/avatar.html">Avatar</a>
-        <a href="../components/badge/badge.html">Badge</a>
-        <a href="../components/button/button.html">Button</a>
-        <a href="../components/card/card.html">Card</a>
-        <a href="../components/image/image.html">Image</a>
-        <a href="../components/input/input.html">Input</a>
-        <a href="../components/modal/modal.html">Modal</a>
-        <a href="../components/rating/rating.html">Rating</a>
-        <a href="../components/snackbar/snackbar.html">Snackbar</a>
+      <!-- components -->
+      <h3>Components</h3>
+      <a href="../components/alert/alert.html">Alert</a>
+      <a href="../components/avatar/avatar.html">Avatar</a>
+      <a href="../components/badge/badge.html">Badge</a>
+      <a href="../components/button/button.html">Button</a>
+      <a href="../components/card/card.html">Card</a>
+      <a href="../components/image/image.html">Image</a>
+      <a href="../components/input/input.html">Input</a>
+      <a href="../components/modal/modal.html">Modal</a>
+      <a href="../components/rating/rating.html">Rating</a>
+      <a href="../components/snackbar/snackbar.html">Snackbar</a>
     </aside>
 
     <!-- main -->
     <main class="cl-main">
-        <h1>Grids</h1>
-        <p class="body-l"></p>
-        <h3>Basic Grid</h3>
-        This grid has a grid template of 12 columns and each cell occupies 1fr space. 
-        Give grid elements suitable classes to to span over the grid columns.
-        <ul>
-            <li><span class="highlight-text">xs-2</span>: span 2</li>
-            <li><span class="highlight-text">xs-4</span>: span 4</li>
-            <li><span class="highlight-text">xs-6</span>: span 6</li>
-            <li><span class="highlight-text">xs-8</span>: span 8</li>
-        </ul>
-        <h3></h3>
-        <div class="grid-wrapper ">
-            <div class="artsy_grid">
-                <div class="xs-4">xs-4</div>
-                <div class="xs-8">xs-8</div>
-                <div class="xs-8">xs-8</div>
-                <div class="xs-4">xs-4</div>
-            </div>
+      <h1>Grids</h1>
+      <p class="body-l"></p>
+      <h3>Basic Grid</h3>
+      This grid has a grid template of 12 columns and each cell occupies 1fr
+      space. Give grid elements suitable classes to to span over the grid
+      columns.
+      <ul>
+        <li><span class="highlight-text">xs-2</span>: span 2</li>
+        <li><span class="highlight-text">xs-4</span>: span 4</li>
+        <li><span class="highlight-text">xs-6</span>: span 6</li>
+        <li><span class="highlight-text">xs-8</span>: span 8</li>
+      </ul>
+      <h3></h3>
+      <div class="grid-wrapper">
+        <div class="artsy_grid">
+          <div class="xs-4">xs-4</div>
+          <div class="xs-8">xs-8</div>
+          <div class="xs-8">xs-8</div>
+          <div class="xs-4">xs-4</div>
         </div>
-        <div class="grid-wrapper ">
-            <div class="artsy_grid">
-                <div class="xs-6">xs-6</div>
-                <div class="xs-6">xs-6</div>
-            </div>
+      </div>
+      <div class="grid-wrapper">
+        <div class="artsy_grid">
+          <div class="xs-6">xs-6</div>
+          <div class="xs-6">xs-6</div>
         </div>
+      </div>
 
-        <!-- code snippet -->
-    <div class="code_wrapper">
+      <!-- code snippet -->
+      <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-            <div class="artsy_grid">
+          <div class="artsy_grid">
                 <div class="xs-4">xs-4</div>
                 <div class="xs-8">xs-8</div>
                 <div class="xs-8">xs-8</div>
@@ -94,25 +106,25 @@
       </div>
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-            <div class="artsy_grid">
+          <div class="artsy_grid">
                 <div class="xs-6">xs-6</div>
                 <div class="xs-6">xs-6</div>
             </div>
         </script>
       </div>
 
-        <div class="grid-wrapper ">
-            <div class="artsy_grid">
-                <div class="xs-4">xs-4</div>
-                <div class="xs-4">xs-4</div>
-                <div class="xs-4">xs-4</div>
-            </div>
+      <div class="grid-wrapper">
+        <div class="artsy_grid">
+          <div class="xs-4">xs-4</div>
+          <div class="xs-4">xs-4</div>
+          <div class="xs-4">xs-4</div>
         </div>
+      </div>
 
-        <!-- code snippet -->
-    <div class="code_wrapper">
+      <!-- code snippet -->
+      <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-            <div class="artsy_grid">
+          <div class="artsy_grid">
                 <div class="xs-4">xs-4</div>
                 <div class="xs-4">xs-4</div>
                 <div class="xs-4">xs-4</div>
@@ -120,22 +132,22 @@
         </script>
       </div>
 
-        <div class="grid-wrapper ">
-            <div class="artsy_grid">
-                <div class="xs-6">xs-6</div>
-                <div class="xs-4">xs-4</div>
-                <div class="xs-2">xs-2</div>
+      <div class="grid-wrapper">
+        <div class="artsy_grid">
+          <div class="xs-6">xs-6</div>
+          <div class="xs-4">xs-4</div>
+          <div class="xs-2">xs-2</div>
 
-                <div class="xs-2">xs-2</div>
-                <div class="xs-4">xs-4</div>
-                <div class="xs-6">xs-6</div>
-            </div>
+          <div class="xs-2">xs-2</div>
+          <div class="xs-4">xs-4</div>
+          <div class="xs-6">xs-6</div>
         </div>
-        
-        <!-- code snippet -->
-    <div class="code_wrapper">
+      </div>
+
+      <!-- code snippet -->
+      <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-            <div class="artsy_grid">
+          <div class="artsy_grid">
                 <div class="xs-6">xs-6</div>
                 <div class="xs-4">xs-4</div>
                 <div class="xs-2">xs-2</div>
@@ -150,31 +162,33 @@
 
     <!-- footer -->
     <footer class="cl-footer flex-align-center">
-        <div class="social-logos flex-align-center">
-            <!-- github icon -->
-            <a href="https://github.com/bhtibrewal">
-                <i class="fa-brands fa-github fa-lg"></i>
-            </a>
-            <!-- twitter icon -->
-            <i class="fa-brands fa-twitter fa-lg"></i>
-            <!-- linkedin icon -->
-            <i class="fa-brands fa-linkedin fa-lg"></i>
-        </div>
-        <div class="flex-align-center">
-            Made with
-            <i class="heart-logo fa-solid fa-heart"></i>
-            by Bhavika Tibrewal
-        </div>
+      <div class="social-logos flex-align-center">
+        <!-- github icon -->
+        <a href="https://github.com/bhtibrewal">
+          <i class="fa-brands fa-github fa-lg"></i>
+        </a>
+        <!-- twitter icon -->
+        <i class="fa-brands fa-twitter fa-lg"></i>
+        <!-- linkedin icon -->
+        <i class="fa-brands fa-linkedin fa-lg"></i>
+      </div>
+      <div class="flex-align-center">
+        Made with
+        <i class="heart-logo fa-solid fa-heart"></i>
+        by Bhavika Tibrewal
+      </div>
     </footer>
 
     <!-- To Top button -->
     <button class="to-top-btn floating-btn">
-        <i class="fa-solid fa-rocket fa-lg"></i>
+      <i class="fa-solid fa-rocket fa-lg"></i>
     </button>
 
     <script src="/src/doc/prism.js"></script>
     <script src="/index.js"></script>
-    <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

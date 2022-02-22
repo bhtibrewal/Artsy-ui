@@ -1,20 +1,14 @@
 /****** This page needs to be orgaized!! ****/
 
-
-
-
 a {
   text-decoration: none;
   color:inherit;
 }
 ul {
-
   padding: 0 1rem;
 }
 button{
   cursor:pointer;
-  border:none;
-  background:transparent;
 }
 img{
   object-fit: cover;

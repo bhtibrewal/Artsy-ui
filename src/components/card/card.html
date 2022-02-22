@@ -13,11 +13,21 @@
   <body class="cl-body">
     <!-- header -->
     <header class="cl-header">
-      <a class="flex-align-center" href="/index.html">
-        <img class="artsy-logo" src="../../assets/logo-v2.png" />
-        <h3><b>Artsy UI</b></h3>
-        <span>v1.0</span>
-      </a>
+      <div class="flex-align-center">
+        <button class="btn hamburger">
+          <i class="fa-solid fa-bars primary-text"></i>
+        </button>
+
+        <a class="flex-align-center" href="/index.html">
+          <img
+            alt="artsyui-logo"
+            class="artsy-logo"
+            src="/src/assets/logo-v2.png"
+          />
+          <h3><b>Artsy UI</b></h3>
+          <span>v1.0</span>
+        </a>
+      </div>
       <div class="right-side">
         <a href="/index.html" class="link-text-primary">Home</a>
         <a
@@ -65,7 +75,6 @@
       <!-- card -->
       <div class="component-desc">
         <h3>Basic Card</h3>
-
         <p>
           Basic card with a hero element just add class
           <span class="highlight-text">basic</span> for the layout.<br />
@@ -133,35 +142,34 @@
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
           <div class="card w-30 basic">
-              <span class="card-badge">
-                   <!-- text -->
-              </span>
-              <button class="icon favourite-icon">
-                  <i class="fa-regular fa-heart fa-2x"></i>
-              </button>
-              <div class="content">
-                      <h2 class="hero">
-                          <!-- hero heading -->
-                      </h2>
-                  <div class="card-header">
-                      <h1> <!-- heading --> </h1>
-                      <div class="card-body">
-                          <!-- text -->
-                      </div>
-                  </div>
-              </div>
+                <span class="card-badge">
+                     <!-- text -->
+                </span>
+                <button class="icon favourite-icon">
+                    <i class="fa-regular fa-heart fa-2x"></i>
+                </button>
+                <div class="content">
+                        <h2 class="hero">
+                            <!-- hero heading -->
+                        </h2>
+                    <div class="card-header">
+                        <h1> <!-- heading --> </h1>
+                        <div class="card-body">
+                            <!-- text -->
+                        </div>
+                    </div>
+                </div>
 
-              <div class="card-actions ">
-                  <!-- button -->  <!-- button -->
-              </div>
-          </div>
+                <div class="card-actions ">
+                    <!-- button -->  <!-- button -->
+                </div>
+            </div>
         </script>
       </div>
 
       <!-- Basic Card w/image -->
       <div class="component-desc">
         <h3>Basic Card w/image</h3>
-
         <p>
           You can also replace the hero element with a img of your choice.<br />
           To get card with text over image just replace the class
@@ -237,46 +245,48 @@
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
           Basic Card w/image
-          <div class="card w-30 basic">
-              <button class="icon favourite-icon">
-                  <i class="fa-regular fa-heart fa-2x"></i>
-              </button>
-              <div class="content">
-                  <img class="card-img" src="" alt="" />
-                  <div class="card-header">
-                      <h1><!-- heading --></h1>
-                      <h2><!-- heading --></h2>
-                      <div class="card-body">
-                          <!-- body -->
-                      </div>
-                      <div class="price-sec">
-                          <h3>$18</h3><span class="strike-price">$22</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="card-actions ">
-                  <button class="btn btn-primary">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      add to cart
-                  </button>
-              </div>
-          </div>
+            <div class="card w-30 basic">
+                <button class="icon favourite-icon">
+                    <i class="fa-regular fa-heart fa-2x"></i>
+                </button>
+                <div class="content">
+                    <img class="card-img" src="" alt="" />
+                    <div class="card-header">
+                        <h1><!-- heading --></h1>
+                        <h2><!-- heading --></h2>
+                        <div class="card-body">
+                            <!-- body -->
+                        </div>
+                        <div class="price-sec">
+                            <h3>$18</h3><span class="strike-price">$22</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-actions ">
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        add to cart
+                    </button>
+                </div>
+            </div>
 
-          Text over media card
-          <div class="card w-30 text-o-media">
-              <!-- add to favourite button -->
-              <div class="content">
-                  <!-- Card content  -->
-              </div>
-              <div class="card-actions ">
-                  <!-- Cta button  -->
-              </div>
-          </div>
+            Text over media card
+            <div class="card w-30 text-o-media">
+                <!-- add to favourite button -->
+                <div class="content">
+                    <!-- Card content  -->
+                </div>
+                <div class="card-actions ">
+                    <!-- Cta button  -->
+                </div>
+            </div>
         </script>
       </div>
 
       <!-- horizontal card -->
-      <h3>Horizontal Card</h3>
+      <div class="component-desc">
+        <h3>Horizontal Card</h3>
+      </div>
 
       <div class="component-container">
         <div class="card w-40 hori">
@@ -318,14 +328,14 @@
         <script type="text/plain" class="line-numbers language-markup">
 
           <div class="card w-40 hori">
-              <div class="content"></div>
-              <div class="card-actions ">
-                  <!-- button -->
-                  <span class="flex-align-center card-action-icon">
-                      <!-- icon --> <!-- icon -->
-                  </span>
-              </div>
-          </div>
+                <div class="content"></div>
+                <div class="card-actions ">
+                    <!-- button -->
+                    <span class="flex-align-center card-action-icon">
+                        <!-- icon --> <!-- icon -->
+                    </span>
+                </div>
+            </div>
         </script>
       </div>
 
@@ -333,12 +343,9 @@
       <div class="component-desc">
         <h3>Card with Overlay</h3>
         <p>
-          Add a div container over the card and give class<span
-            class="highlight-text"
-            >overlay-container
-          </span>
-          to it and div with class<span class="highlight-text">overlay</span>
-          with the card.
+          Add a div container over the card and give class
+          <span class="highlight-text">overlay-container </span> to it and div
+          with class <span class="highlight-text">overlay</span> with the card.
         </p>
       </div>
 
@@ -386,11 +393,11 @@
         <script type="text/plain" class="line-numbers language-markup">
 
           <div class="overlay-container">
-              <!-- any card -->
-              <div class="overlay">
-                  <h2>Sold Out</h2>
-              </div>
-          </div>
+                <!-- any card -->
+                <div class="overlay">
+                    <h2>Sold Out</h2>
+                </div>
+            </div>
         </script>
       </div>
     </main>

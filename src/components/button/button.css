@@ -9,7 +9,9 @@
   line-height: 1.5;
   font-weight: 500;
   text-align: center;
-  background: none;
+  border:none;
+  outline:none;
+  background:transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +71,8 @@
 /* floating buttons */
 .floating-btn {
   border-radius: 50%;
+  border:none;
+  outline:none;
   background: var(--primary-color);
   color: var(--light-text);
   aspect-ratio:1;

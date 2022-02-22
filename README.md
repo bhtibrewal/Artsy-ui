@@ -14,6 +14,12 @@ To import Artsy UI in your Project paste the below code in the head tag of your 
 <link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
 ```
 
+https://user-images.githubusercontent.com/42600164/155026042-1ca5c0f1-59ec-495b-84c4-34fccbc73558.mp4
+
+## Features
+- Resposive design
+- Light /Dark Mode Toogle
+- To Top Button
 
 ## Getting Started
 
