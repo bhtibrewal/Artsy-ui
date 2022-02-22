@@ -6,9 +6,7 @@ const main = document.querySelector(".cl-main");
 const toTopBtn = document.querySelector('.to-top-btn');
 
 hamburger?.addEventListener("click", () =>
-  aside.classList.contains("show") ?
-    aside.classList.remove("show") :
-    aside.classList.add("show")
+  aside.classList.toggle("show") 
 )
 
 const darkmode = () => {
@@ -45,25 +43,29 @@ const setDarkmode = () => {
 
 modeBtn.addEventListener("click", () => {
   const mode = localStorage.getItem("mode");//get from local storage
-  const isSystemDark = window.matchMedia("(prefers-color-scheme: light)").matches;
+  const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   if (mode)
     mode === "lightmode" ? setDarkmode() : setLightmode();
   else
     isSystemDark ? setLightmode() : setDarkmode();
 }
-)
+);
+
+// 
 window.onload = () => {
   const mode = localStorage.getItem("mode");
   const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+  console.log(isSystemDark);
   if (mode)
     mode === "lightmode" ? lightmode() : darkmode();
   else
     !isSystemDark ? lightmode() : darkmode();
+
+  toTopBtn.style.display = "none";
 }
 
-window.onload = () => toTopBtn.style.display = "none";
 
 main.onscroll = () => (main.scrollTop > 100) ?
   toTopBtn.style.display = "block" :
