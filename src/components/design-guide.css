@@ -21,8 +21,6 @@ html {
 body {
   font-family:Nunito, sans-serif;
   font-size: 1.6rem;
-  background: var(--light-bg);
-
 }
 :root {
   --primary-color-darker: rgb(206, 122, 18);/*#ce7a12*/
@@ -31,13 +29,15 @@ body {
   --primary-color_op-half: rgba(226, 132, 19, 0.5);
 
   --secondary-color: rgb(128, 5, 93); /*#80055d*/
+  --secondary-color-lighter: #ed55c2;
   --secondary-color_op-half: rgb(128, 5, 93, 0.5);
 
   --primary-text: rgb(46, 46, 46);
   --secondary-text: rgb(73, 73, 73); /*#737373*/
-  --light-text: rgb(241, 241, 241);
-  --light-bg: rgb(252, 252, 252);
+  --light-text: rgb(241, 241, 241);/* #f1f1f1 */
+  --light-bg: rgb(252, 252, 252);/* #fcfcfc */
   --gray-bg: #d4d4d4;
+  --code-wrapper: #2d2d2d;
 
   --gray: #808080;
   --alert-primary-text: #084298;

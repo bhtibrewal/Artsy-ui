@@ -132,6 +132,7 @@
 .favourite-icon{
   z-index:1;
   background: var(--light-bg);
+  color: var(--primary-text);
 }
 
 .favourite-icon:hover {

@@ -12,11 +12,21 @@
   <body class="cl-body">
     <!-- header -->
     <header class="cl-header">
-      <a class="flex-align-center" href="/index.html">
-        <img class="artsy-logo" src="../../assets/logo-v2.png" />
-        <h3><b>Artsy UI</b></h3>
-        <span>v1.0</span>
-      </a>
+      <div class="flex-align-center">
+        <button class="btn hamburger">
+          <i class="fa-solid fa-bars primary-text"></i>
+        </button>
+
+        <a class="flex-align-center" href="/index.html">
+          <img
+            alt="artsyui-logo"
+            class="artsy-logo"
+            src="/src/assets/logo-v2.png"
+          />
+          <h3><b>Artsy UI</b></h3>
+          <span>v1.0</span>
+        </a>
+      </div>
       <div class="right-side">
         <a href="/index.html" class="link-text-primary">Home</a>
         <a
@@ -68,14 +78,14 @@
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
           <div class="modal-overlay">
-              <button class="btn overlay-close-btn" onclick="closeFunc(this)">
-                  <i class="fa-solid fa-x "></i>
-              </button>
+                <button class="btn overlay-close-btn" onclick="closeFunc(this)">
+                    <i class="fa-solid fa-x "></i>
+                </button>
 
-              <div class="modal">
-                 <!-- content here -->
-              </div>
-          </div>
+                <div class="modal">
+                   <!-- content here -->
+                </div>
+            </div>
         </script>
       </div>
 
@@ -83,13 +93,13 @@
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-javascript">
           Javascript Code
-          const modal = document.querySelector(".modal-overlay")
-          const closeFunc = (e) => {
-              e.parentElement.style.display = "none";
-          }
-          const openModal=()=>{
-              modal.style.display = "flex";
-          }
+            const modal = document.querySelector(".modal-overlay")
+            const closeFunc = (e) => {
+                e.parentElement.style.display = "none";
+            }
+            const openModal=()=>{
+                modal.style.display = "flex";
+            }
         </script>
       </div>
     </main>

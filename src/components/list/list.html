@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../styles.css" />
-    <link rel="stylesheet" href="../../artsyUI.css" />
-    <title>Artsy UI</title>
-  </head>
 
-  <body class="cl-body">
-    <!-- header -->
-    <header class="cl-header">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../styles.css" />
+  <link rel="stylesheet" href="../../artsyUI.css" />
+  <title>Artsy UI</title>
+</head>
+
+<body class="cl-body">
+  <!-- header -->
+  <header class="cl-header">
+    <div class="flex-align-center">
+      <button class="btn hamburger"><i class="fa-solid fa-bars primary-text"></i></button>
+
       <a class="flex-align-center" href="/index.html">
-        <img class="artsy-logo" src="../../assets/logo-v2.png" />
+        <img alt="artsyui-logo" class="artsy-logo" src="/src/assets/logo-v2.png" />
         <h3><b>Artsy UI</b></h3>
         <span>v1.0</span>
       </a>
-      <div class="right-side">
-        <a href="/index.html" class="link-text-primary">Home</a>
-        <a
-          href="/src/getting_started/introduction.html"
-          class="link-text-primary"
-          >Docs</a
-        >
-        <i class="fa-solid fa-moon mode-toggle"></i>
-      </div>
-    </header>
+    </div>
+    <div class="right-side">
+      <a href="/index.html" class="link-text-primary">Home</a>
+      <a href="/src/getting_started/introduction.html" class="link-text-primary">Docs</a>
+      <i class="fa-solid fa-moon mode-toggle"></i>
+    </div>
+  </header>
 
-    <!--******** aside *******-->
-    <aside class="cl-aside">
-      <!-- Getting Started -->
-      <h3>Getting Started</h3>
-      <a href="/src/getting_started/introduction.html">Introduction</a>
-      <a href="/src/getting_started/typography.html">Typography</a>
-      <a href="/src/getting_started/color-scheme.html">Colors</a>
-      <a href="/src/getting_started/grid.html">Grid</a>
+  <!--******** aside *******-->
+  <aside class="cl-aside">
+    <!-- Getting Started -->
+    <h3>Getting Started</h3>
+    <a href="/src/getting_started/introduction.html">Introduction</a>
+    <a href="/src/getting_started/typography.html">Typography</a>
+    <a href="/src/getting_started/color-scheme.html">Colors</a>
+    <a href="/src/getting_started/grid.html">Grid</a>
 
-      <!-- components -->
-      <h3>Components</h3>
-      <a href="../alert/alert.html">Alert</a>
-      <a href="../avatar/avatar.html">Avatar</a>
-      <a href="../badge/badge.html">Badge</a>
-      <a href="">Button</a>
-      <a href="../card/card.html">Card</a>
-      <a href="../image/image.html">Image</a>
-      <a href="../input/input.html">Input</a>
-      <a class="active-tab" href="">List</a>
-      <a href="../modal/modal.html">Modal</a>
-      <a href="../nav/nav.html">Navigation</a>
-      <a href="../rating/rating.html">Rating</a>
-      <a href="../snackbar/snackbar.html">Snackbar</a>
-    </aside>
+    <!-- components -->
+    <h3>Components</h3>
+    <a href="../alert/alert.html">Alert</a>
+    <a href="../avatar/avatar.html">Avatar</a>
+    <a href="../badge/badge.html">Badge</a>
+    <a href="">Button</a>
+    <a href="../card/card.html">Card</a>
+    <a href="../image/image.html">Image</a>
+    <a href="../input/input.html">Input</a>
+    <a class="active-tab" href="">List</a>
+    <a href="../modal/modal.html">Modal</a>
+    <a href="../nav/nav.html">Navigation</a>
+    <a href="../rating/rating.html">Rating</a>
+    <a href="../snackbar/snackbar.html">Snackbar</a>
+  </aside>
 
-    <!-- main -->
-    <main class="cl-main">
-      <h1><i class="fa-solid fa-list-check"></i>Lists</h1>
-      <p class="body-l">
-        Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
-      </p>
-      <div class="component-container">
-        <ul class="artsy-list">
-          <h2 class="list-heading">Mail</h2>
-          <li><i class="fa-solid fa-inbox"></i>Inbox</li>
-          <li><i class="fa-regular fa-paper-plane"></i>Sent Mail</li>
-          <li><i class="fa-solid fa-envelope-open"></i>Draft</li>
-          <li><i class="fa-solid fa-folder-open"></i>Saved</li>
-          <li><i class="fa-solid fa-star"></i></i>Starred</li>
-        </ul>
-      </div>
+  <!-- main -->
+  <main class="cl-main">
+    <h1><i class="fa-solid fa-list-check"></i>Lists</h1>
+    <p class="body-l">
+      Lists are a continuous group of text or images. They are composed of items containing primary and supplemental
+      actions, which are represented by icons and text.
+    </p>
+    <div class="component-container">
+      <ul class="artsy-list">
+        <h2 class="list-heading">Mail</h2>
+        <li><i class="fa-solid fa-inbox"></i>Inbox</li>
+        <li><i class="fa-regular fa-paper-plane"></i>Sent Mail</li>
+        <li><i class="fa-solid fa-envelope-open"></i>Draft</li>
+        <li><i class="fa-solid fa-folder-open"></i>Saved</li>
+        <li><i class="fa-solid fa-star"></i></i>Starred</li>
+      </ul>
+    </div>
 
-      <!-- code snippet -->
-      <div class="code_wrapper">
-        <script type="text/plain" class="line-numbers language-markup">
-          <header class="artsy-header">
+    <!-- code snippet -->
+    <div class="code_wrapper">
+      <script type="text/plain" class="line-numbers language-markup">
+        <header class="artsy-header">
             <div class="left-side">
-              <img alt="" class="logo" src="../../assets/logo-v2.png" />
+              <img alt="" class="logo" src="/src/assets/logo-v2.png" />
               <h3><b>Artsy UI</b></h3>
               <span>v1.0</span>
             </div>
@@ -85,38 +87,36 @@
               <i class="fa-solid fa-moon"></i>
             </div>
         </script>
-      </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- footer -->
-    <footer class="cl-footer flex-align-center">
-      <div class="social-logos flex-align-center">
-        <!-- github icon -->
-        <a href="https://github.com/bhtibrewal">
-          <i class="fa-brands fa-github fa-lg"></i>
-        </a>
-        <!-- twitter icon -->
-        <i class="fa-brands fa-twitter fa-lg"></i>
-        <!-- linkedin icon -->
-        <i class="fa-brands fa-linkedin fa-lg"></i>
-      </div>
-      <div class="flex-align-center">
-        Made with
-        <i class="heart-logo fa-solid fa-heart"></i>
-        by Bhavika Tibrewal
-      </div>
-    </footer>
+  <!-- footer -->
+  <footer class="cl-footer flex-align-center">
+    <div class="social-logos flex-align-center">
+      <!-- github icon -->
+      <a href="https://github.com/bhtibrewal">
+        <i class="fa-brands fa-github fa-lg"></i>
+      </a>
+      <!-- twitter icon -->
+      <i class="fa-brands fa-twitter fa-lg"></i>
+      <!-- linkedin icon -->
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </div>
+    <div class="flex-align-center">
+      Made with
+      <i class="heart-logo fa-solid fa-heart"></i>
+      by Bhavika Tibrewal
+    </div>
+  </footer>
 
-    <!-- to top btn -->
-    <button class="to-top-btn floating-btn">
-      <i class="fa-solid fa-rocket fa-lg"></i>
-    </button>
+  <!-- to top btn -->
+  <button class="to-top-btn floating-btn">
+    <i class="fa-solid fa-rocket fa-lg"></i>
+  </button>
 
-    <script src="/src/doc/prism.js"></script>
-    <script src="/index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/617c60ee1d.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="/src/doc/prism.js"></script>
+  <script src="/index.js"></script>
+  <script src="https://kit.fontawesome.com/617c60ee1d.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
